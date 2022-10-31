@@ -1,0 +1,3027 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "src/test",
+    "scripts": "script",
+    "libraries": [
+      "lib",
+      "lib/sense-v1/node_modules"
+    ]
+  },
+  "files": {
+    "lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1667178425972,
+      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "sourceName": "lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1667178426632,
+      "contentHash": "bd4bde818b3c57b21e0601277b1d2dac",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Vm.sol/Vm.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1667178426632,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "lib/forge-std/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "console.sol/console.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@openzeppelin/contracts/proxy/Clones.sol": {
+      "lastModificationDate": 1667178488057,
+      "contentHash": "8d03477cb67af28579646fdb2508ddb0",
+      "sourceName": "lib/sense-v1/node_modules/@openzeppelin/contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Clones": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Clones.sol/Clones.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol": {
+      "lastModificationDate": 1667178488159,
+      "contentHash": "25c8108f36fdd472bc78d4c4af240c11",
+      "sourceName": "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Pausable": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Pausable.sol/Pausable.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1667178488039,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Context": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Context.sol/Context.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-core/src/Divider.sol": {
+      "lastModificationDate": 1667178429006,
+      "contentHash": "5dce6e79d832774461b4ca48c32b9f25",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-core/src/Divider.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Divider": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "src/Divider.sol/Divider.json"
+        },
+        "TokenHandler": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "src/Divider.sol/TokenHandler.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol": {
+      "lastModificationDate": 1667178429007,
+      "contentHash": "8f28f65e30ac5563b50328ebf0074c08",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BaseAdapter": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "abstract/BaseAdapter.sol/BaseAdapter.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol": {
+      "lastModificationDate": 1667178429011,
+      "contentHash": "3efe701bd38058e83dc2eb2218e47a27",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "FixedMath": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "external/FixedMath.sol/FixedMath.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Pool.sol": {
+      "lastModificationDate": 1667178429012,
+      "contentHash": "12f7623f8d7ba519fb456b5c4f022f16",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Pool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerPool": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "balancer/Pool.sol/BalancerPool.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol": {
+      "lastModificationDate": 1667178429012,
+      "contentHash": "08a015110b8a590c480a961b251fae11",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerVault": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "balancer/Vault.sol/BalancerVault.json"
+        },
+        "IAsset": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "balancer/Vault.sol/IAsset.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol": {
+      "lastModificationDate": 1667178429021,
+      "contentHash": "7c95be422a4471d710737dc485eb48a3",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Token": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "tokens/Token.sol/Token.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/PoolManager.sol": {
+      "lastModificationDate": 1667178429169,
+      "contentHash": "6e1fb89c305cc127e32ff43460f1a4b5",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/PoolManager.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/proxy/Clones.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/Divider.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Pool.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/BalancerOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/LP.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/PT.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/Target.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/Underlying.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/Bytes32AddressLib.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "ComptrollerLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PoolManager.sol/ComptrollerLike.json"
+        },
+        "FuseDirectoryLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PoolManager.sol/FuseDirectoryLike.json"
+        },
+        "MasterOracleLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PoolManager.sol/MasterOracleLike.json"
+        },
+        "PoolManager": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PoolManager.sol/PoolManager.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol": {
+      "lastModificationDate": 1667178429171,
+      "contentHash": "99f5c1da8a758cb2553c9cbb4d639a40",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.0",
+      "artifacts": {
+        "Trust": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "src/Trust.sol/Trust.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol": {
+      "lastModificationDate": 1667178429172,
+      "contentHash": "d50d4818cdf90a054613eef458af6849",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.4",
+      "artifacts": {
+        "Errors": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "libs/Errors.sol/Errors.json"
+        }
+      }
+    },
+    "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol": {
+      "lastModificationDate": 1667178429173,
+      "contentHash": "81f0101042633cb5bb0d8790f60595a8",
+      "sourceName": "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.0",
+      "artifacts": {
+        "Levels": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Levels.sol/Levels.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/Divider.sol": {
+      "lastModificationDate": 1667178429006,
+      "contentHash": "5dce6e79d832774461b4ca48c32b9f25",
+      "sourceName": "lib/sense-v1/pkg/core/src/Divider.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Divider": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Divider.sol/Divider.json"
+        },
+        "TokenHandler": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Divider.sol/TokenHandler.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/Periphery.sol": {
+      "lastModificationDate": 1667178429007,
+      "contentHash": "554d34aae44a8eabed85222aa3da1d59",
+      "sourceName": "lib/sense-v1/pkg/core/src/Periphery.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/proxy/Clones.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/Divider.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Pool.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/PoolManager.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/factories/BaseFactory.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/balancer/Pool.sol",
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/BalancerOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/LP.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/PT.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/Target.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/Underlying.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/Bytes32AddressLib.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Periphery": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Periphery.sol/Periphery.json"
+        },
+        "SpaceFactoryLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Periphery.sol/SpaceFactoryLike.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol": {
+      "lastModificationDate": 1667178429007,
+      "contentHash": "8f28f65e30ac5563b50328ebf0074c08",
+      "sourceName": "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BaseAdapter": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BaseAdapter.sol/BaseAdapter.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol": {
+      "lastModificationDate": 1667178429007,
+      "contentHash": "b1ca78d46cc9400451b52e41d69e2d71",
+      "sourceName": "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "IClaimer": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IClaimer.sol/IClaimer.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol": {
+      "lastModificationDate": 1667178429009,
+      "contentHash": "484983be448a88fdf7fbef7a8da06c90",
+      "sourceName": "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Crop": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Crop.sol/Crop.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol": {
+      "lastModificationDate": 1667178429009,
+      "contentHash": "cbec843126fc338a0397985f889c4e3e",
+      "sourceName": "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Crops": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Crops.sol/Crops.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/adapters/abstract/factories/BaseFactory.sol": {
+      "lastModificationDate": 1667178429009,
+      "contentHash": "5ef3e4413413cf4cbec338cd493d348b",
+      "sourceName": "lib/sense-v1/pkg/core/src/adapters/abstract/factories/BaseFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BaseFactory": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BaseFactory.sol/BaseFactory.json"
+        },
+        "ChainlinkOracleLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BaseFactory.sol/ChainlinkOracleLike.json"
+        },
+        "ERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BaseFactory.sol/ERC20.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/external/DateTime.sol": {
+      "lastModificationDate": 1667178429011,
+      "contentHash": "73bf07c2e9f74833b1569c82193dbdd6",
+      "sourceName": "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "DateTime": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "src/external/DateTime.sol/DateTime.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/external/FixedMath.sol": {
+      "lastModificationDate": 1667178429011,
+      "contentHash": "3efe701bd38058e83dc2eb2218e47a27",
+      "sourceName": "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "FixedMath": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "FixedMath.sol/FixedMath.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/external/balancer/Pool.sol": {
+      "lastModificationDate": 1667178429012,
+      "contentHash": "12f7623f8d7ba519fb456b5c4f022f16",
+      "sourceName": "lib/sense-v1/pkg/core/src/external/balancer/Pool.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerPool": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Pool.sol/BalancerPool.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol": {
+      "lastModificationDate": 1667178429012,
+      "contentHash": "08a015110b8a590c480a961b251fae11",
+      "sourceName": "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerVault": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Vault.sol/BalancerVault.json"
+        },
+        "IAsset": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Vault.sol/IAsset.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol": {
+      "lastModificationDate": 1667178429012,
+      "contentHash": "391faf4a35b4687d05a5df477e58fb53",
+      "sourceName": "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC3156FlashBorrower": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC3156FlashBorrower.sol/IERC3156FlashBorrower.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol": {
+      "lastModificationDate": 1667178429012,
+      "contentHash": "560ad224328d3740c45322ef38f7582a",
+      "sourceName": "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC3156FlashLender": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC3156FlashLender.sol/IERC3156FlashLender.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/tokens/Token.sol": {
+      "lastModificationDate": 1667178429021,
+      "contentHash": "7c95be422a4471d710737dc485eb48a3",
+      "sourceName": "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Token": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Token.sol/Token.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/core/src/tokens/YT.sol": {
+      "lastModificationDate": 1667178429021,
+      "contentHash": "bc14a7ccab52f83e35e6d83e3ff511e6",
+      "sourceName": "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "YT": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "YT.sol/YT.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/external/BalancerOracle.sol": {
+      "lastModificationDate": 1667178429169,
+      "contentHash": "8a966ecc60aadd0c8631c34f5ec64a1c",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/external/BalancerOracle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "src/external/BalancerOracle.sol/BalancerOracle.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/external/CToken.sol": {
+      "lastModificationDate": 1667178429169,
+      "contentHash": "f3a0d0c5da3bea558bd511257a4286d6",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "CToken": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "CToken.sol/CToken.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol": {
+      "lastModificationDate": 1667178429169,
+      "contentHash": "126592f9e1aebfbb21a739d8251619ba",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "PriceOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PriceOracle.sol/PriceOracle.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/oracles/LP.sol": {
+      "lastModificationDate": 1667178429169,
+      "contentHash": "fcd6d3dcfd46ffec2d4b8ac281505d5a",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/oracles/LP.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Pool.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "LPOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "LP.sol/LPOracle.json"
+        },
+        "SpaceLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "LP.sol/SpaceLike.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/oracles/PT.sol": {
+      "lastModificationDate": 1667178429169,
+      "contentHash": "b40fefa5016d46d62dc677a6b0cc2e2f",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/oracles/PT.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/BalancerOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "PTOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PT.sol/PTOracle.json"
+        },
+        "SpaceLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "PT.sol/SpaceLike.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/oracles/Target.sol": {
+      "lastModificationDate": 1667178429170,
+      "contentHash": "11288e765fe215e56f189601b56cce72",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/oracles/Target.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "TargetOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Target.sol/TargetOracle.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/fuse/src/oracles/Underlying.sol": {
+      "lastModificationDate": 1667178429170,
+      "contentHash": "e5a3d0d09686fd447073063b405a4e4f",
+      "sourceName": "lib/sense-v1/pkg/fuse/src/oracles/Underlying.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "UnderlyingOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Underlying.sol/UnderlyingOracle.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/utils/src/Trust.sol": {
+      "lastModificationDate": 1667178429171,
+      "contentHash": "99f5c1da8a758cb2553c9cbb4d639a40",
+      "sourceName": "lib/sense-v1/pkg/utils/src/Trust.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.7.0",
+      "artifacts": {
+        "Trust": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Trust.sol/Trust.json"
+        }
+      }
+    },
+    "lib/sense-v1/pkg/utils/src/libs/Errors.sol": {
+      "lastModificationDate": 1667178429172,
+      "contentHash": "d50d4818cdf90a054613eef458af6849",
+      "sourceName": "lib/sense-v1/pkg/utils/src/libs/Errors.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.4",
+      "artifacts": {
+        "Errors": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Errors.sol/Errors.json"
+        }
+      }
+    },
+    "lib/solmate/src/mixins/ERC4626.sol": {
+      "lastModificationDate": 1667179133010,
+      "contentHash": "a1a233864cf2f9ea3ab3a242923e3604",
+      "sourceName": "lib/solmate/src/mixins/ERC4626.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC4626": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ERC4626.sol/ERC4626.json"
+        }
+      }
+    },
+    "lib/solmate/src/test/utils/DSTestPlus.sol": {
+      "lastModificationDate": 1667179133016,
+      "contentHash": "913c4bde53f43a6f634fa66b517f4f31",
+      "sourceName": "lib/solmate/src/test/utils/DSTestPlus.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/solmate/src/test/utils/Hevm.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "DSTestPlus": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "DSTestPlus.sol/DSTestPlus.json"
+        }
+      }
+    },
+    "lib/solmate/src/test/utils/Hevm.sol": {
+      "lastModificationDate": 1667179133016,
+      "contentHash": "b78a01021501f7bafd44ae2d9c30b207",
+      "sourceName": "lib/solmate/src/test/utils/Hevm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Hevm": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Hevm.sol/Hevm.json"
+        }
+      }
+    },
+    "lib/solmate/src/test/utils/mocks/MockERC20.sol": {
+      "lastModificationDate": 1667179133017,
+      "contentHash": "0254a89f5117d3c2d4061aabc4e1f103",
+      "sourceName": "lib/solmate/src/test/utils/mocks/MockERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "MockERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "MockERC20.sol/MockERC20.json"
+        }
+      }
+    },
+    "lib/solmate/src/tokens/ERC20.sol": {
+      "lastModificationDate": 1667179133019,
+      "contentHash": "19ad9d57ce0b1cad939aadcbccf8e80d",
+      "sourceName": "lib/solmate/src/tokens/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC20": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "lib/solmate/src/utils/Bytes32AddressLib.sol": {
+      "lastModificationDate": 1667179133019,
+      "contentHash": "7526857abd0188726d1e495f8597167c",
+      "sourceName": "lib/solmate/src/utils/Bytes32AddressLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "Bytes32AddressLib": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Bytes32AddressLib.sol/Bytes32AddressLib.json"
+        }
+      }
+    },
+    "lib/solmate/src/utils/FixedPointMathLib.sol": {
+      "lastModificationDate": 1667179133020,
+      "contentHash": "4f40a7297d911994e20758780e0dc3a9",
+      "sourceName": "lib/solmate/src/utils/FixedPointMathLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "FixedPointMathLib": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "FixedPointMathLib.sol/FixedPointMathLib.json"
+        }
+      }
+    },
+    "lib/solmate/src/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1667179133021,
+      "contentHash": "22addbb3479534094ff1d93031f1f6ae",
+      "sourceName": "lib/solmate/src/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ReentrancyGuard": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ReentrancyGuard.sol/ReentrancyGuard.json"
+        }
+      }
+    },
+    "lib/solmate/src/utils/SafeTransferLib.sol": {
+      "lastModificationDate": 1667179133022,
+      "contentHash": "a05e819117579985368c897b8c2da411",
+      "sourceName": "lib/solmate/src/utils/SafeTransferLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "SafeTransferLib": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "SafeTransferLib.sol/SafeTransferLib.json"
+        }
+      }
+    },
+    "src/AutoRoller.sol": {
+      "lastModificationDate": 1667178277238,
+      "contentHash": "b6dc658fe1ab88acba16d574efd39ce4",
+      "sourceName": "src/AutoRoller.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/SafeCast.sol",
+        "src/external/DateTime.sol",
+        "src/interfaces/BalancerVault.sol",
+        "src/interfaces/Space.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "AutoRoller": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/AutoRoller.json"
+        },
+        "DividerLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/DividerLike.json"
+        },
+        "OwnedAdapterLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/OwnedAdapterLike.json"
+        },
+        "PeripheryLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/PeripheryLike.json"
+        },
+        "RollerUtils": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/RollerUtils.json"
+        },
+        "SpaceFactoryLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/SpaceFactoryLike.json"
+        },
+        "YTLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.sol/YTLike.json"
+        }
+      }
+    },
+    "src/AutoRollerFactory.sol": {
+      "lastModificationDate": 1667178277240,
+      "contentHash": "3f99cd578904c4ef00acf4ecef8c30f1",
+      "sourceName": "src/AutoRollerFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/pkg/utils/src/Trust.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/AutoRoller.sol",
+        "src/BaseSplitCodeFactory.sol",
+        "src/SafeCast.sol",
+        "src/external/DateTime.sol",
+        "src/interfaces/BalancerVault.sol",
+        "src/interfaces/Space.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "AutoRollerFactory": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRollerFactory.sol/AutoRollerFactory.json"
+        },
+        "RollerPeripheryLike": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRollerFactory.sol/RollerPeripheryLike.json"
+        }
+      }
+    },
+    "src/BaseSplitCodeFactory.sol": {
+      "lastModificationDate": 1667178277241,
+      "contentHash": "279d287807b25c09466ab3c39d94f416",
+      "sourceName": "src/BaseSplitCodeFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BaseSplitCodeFactory": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BaseSplitCodeFactory.sol/BaseSplitCodeFactory.json"
+        },
+        "CodeDeployer": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BaseSplitCodeFactory.sol/CodeDeployer.json"
+        }
+      }
+    },
+    "src/RollerPeriphery.sol": {
+      "lastModificationDate": 1667178277242,
+      "contentHash": "2a9698789bf06b0ff5480ffc7a383e53",
+      "sourceName": "src/RollerPeriphery.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/AutoRoller.sol",
+        "src/SafeCast.sol",
+        "src/external/DateTime.sol",
+        "src/interfaces/BalancerVault.sol",
+        "src/interfaces/Space.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "RollerPeriphery": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "RollerPeriphery.sol/RollerPeriphery.json"
+        }
+      }
+    },
+    "src/SafeCast.sol": {
+      "lastModificationDate": 1667178277243,
+      "contentHash": "e6f483f0f30f9ac56aaf4f2fea066013",
+      "sourceName": "src/SafeCast.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "SafeCast": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "SafeCast.sol/SafeCast.json"
+        }
+      }
+    },
+    "src/external/DateTime.sol": {
+      "lastModificationDate": 1667178277243,
+      "contentHash": "85b7d470ce226f14b43b0615fc6ca3ef",
+      "sourceName": "src/external/DateTime.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "DateTime": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "DateTime.sol/DateTime.json"
+        }
+      }
+    },
+    "src/interfaces/BalancerOracle.sol": {
+      "lastModificationDate": 1667178277244,
+      "contentHash": "d50a4792d534ce4fc22c57050c5d3608",
+      "sourceName": "src/interfaces/BalancerOracle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerOracle": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BalancerOracle.sol/BalancerOracle.json"
+        }
+      }
+    },
+    "src/interfaces/BalancerVault.sol": {
+      "lastModificationDate": 1667178277245,
+      "contentHash": "a34b8c4309f7db9a9de9d25791312f2d",
+      "sourceName": "src/interfaces/BalancerVault.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "BalancerVault": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "BalancerVault.sol/BalancerVault.json"
+        }
+      }
+    },
+    "src/interfaces/Space.sol": {
+      "lastModificationDate": 1667178277246,
+      "contentHash": "988ad4222fecc0c4ea5e711feac471c1",
+      "sourceName": "src/interfaces/Space.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC20.sol",
+        "src/interfaces/BalancerVault.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Space": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Space.sol/Space.json"
+        }
+      }
+    },
+    "src/test/AutoRoller.t.sol": {
+      "lastModificationDate": 1667178277247,
+      "contentHash": "c26621eba6148057e948e8c8c2fb62b4",
+      "sourceName": "src/test/AutoRoller.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/proxy/Clones.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/Divider.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/FixedMath.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Pool.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-core/src/tokens/Token.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/PoolManager.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/Periphery.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/factories/BaseFactory.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/balancer/Pool.sol",
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/fuse/src/external/BalancerOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/external/CToken.sol",
+        "lib/sense-v1/pkg/fuse/src/external/PriceOracle.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/LP.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/PT.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/Target.sol",
+        "lib/sense-v1/pkg/fuse/src/oracles/Underlying.sol",
+        "lib/sense-v1/pkg/utils/src/Trust.sol",
+        "lib/sense-v1/pkg/utils/src/libs/Errors.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/DSTestPlus.sol",
+        "lib/solmate/src/test/utils/Hevm.sol",
+        "lib/solmate/src/test/utils/mocks/MockERC20.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/Bytes32AddressLib.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/AutoRoller.sol",
+        "src/AutoRollerFactory.sol",
+        "src/BaseSplitCodeFactory.sol",
+        "src/RollerPeriphery.sol",
+        "src/SafeCast.sol",
+        "src/external/DateTime.sol",
+        "src/interfaces/BalancerVault.sol",
+        "src/interfaces/Space.sol",
+        "src/test/utils/AddressBook.sol",
+        "src/test/utils/MockOwnedAdapter.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "Authentication": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.t.sol/Authentication.json"
+        },
+        "AutoRollerTest": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.t.sol/AutoRollerTest.json"
+        },
+        "Mintooor": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.t.sol/Mintooor.json"
+        },
+        "ProtocolFeesController": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AutoRoller.t.sol/ProtocolFeesController.json"
+        }
+      }
+    },
+    "src/test/utils/AddressBook.sol": {
+      "lastModificationDate": 1667178277249,
+      "contentHash": "f694a9f880c9dc45345129a77d7c57f1",
+      "sourceName": "src/test/utils/AddressBook.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "AddressBook": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AddressBook.sol/AddressBook.json"
+        }
+      }
+    },
+    "src/test/utils/MockOwnedAdapter.sol": {
+      "lastModificationDate": 1667178277250,
+      "contentHash": "1ac103329bf83c2318f7c062f168baa2",
+      "sourceName": "src/test/utils/MockOwnedAdapter.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/security/Pausable.sol",
+        "lib/sense-v1/node_modules/@openzeppelin/contracts/utils/Context.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/Trust.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Levels.sol",
+        "lib/sense-v1/pkg/core/src/Divider.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/BaseAdapter.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/IClaimer.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crop.sol",
+        "lib/sense-v1/pkg/core/src/adapters/abstract/extensions/Crops.sol",
+        "lib/sense-v1/pkg/core/src/external/DateTime.sol",
+        "lib/sense-v1/pkg/core/src/external/FixedMath.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashBorrower.sol",
+        "lib/sense-v1/pkg/core/src/external/flashloan/IERC3156FlashLender.sol",
+        "lib/sense-v1/pkg/core/src/tokens/Token.sol",
+        "lib/sense-v1/pkg/core/src/tokens/YT.sol",
+        "lib/sense-v1/pkg/utils/src/Trust.sol",
+        "lib/solmate/src/mixins/ERC4626.sol",
+        "lib/solmate/src/test/utils/mocks/MockERC20.sol",
+        "lib/solmate/src/tokens/ERC20.sol",
+        "lib/solmate/src/utils/FixedPointMathLib.sol",
+        "lib/solmate/src/utils/ReentrancyGuard.sol",
+        "lib/solmate/src/utils/SafeTransferLib.sol",
+        "src/AutoRoller.sol",
+        "src/SafeCast.sol",
+        "src/external/DateTime.sol",
+        "src/interfaces/BalancerVault.sol",
+        "src/interfaces/Space.sol"
+      ],
+      "versionRequirement": "=0.8.13",
+      "artifacts": {
+        "MockOwnableAdapter": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "MockOwnedAdapter.sol/MockOwnableAdapter.json"
+        },
+        "Opener": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "MockOwnedAdapter.sol/Opener.json"
+        },
+        "OwnableAdapter": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "MockOwnedAdapter.sol/OwnableAdapter.json"
+        }
+      }
+    }
+  }
+}

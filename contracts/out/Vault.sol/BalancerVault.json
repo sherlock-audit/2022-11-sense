@@ -1,0 +1,2095 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "minAmountsOut",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "toInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct BalancerVault.ExitPoolRequest",
+          "name": "request",
+          "type": "tuple"
+        }
+      ],
+      "name": "exitPool",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "enum BalancerVault.PoolSpecialization",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getPoolTokens",
+      "outputs": [
+        {
+          "internalType": "contract ERC20[]",
+          "name": "tokens",
+          "type": "address[]"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "balances",
+          "type": "uint256[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxBlockNumber",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "poolId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "components": [
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "maxAmountsIn",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct BalancerVault.JoinPoolRequest",
+          "name": "request",
+          "type": "tuple"
+        }
+      ],
+      "name": "joinPool",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "enum BalancerVault.SwapKind",
+              "name": "kind",
+              "type": "uint8"
+            },
+            {
+              "internalType": "contract IAsset",
+              "name": "assetIn",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IAsset",
+              "name": "assetOut",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "userData",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct BalancerVault.SingleSwap",
+          "name": "singleSwap",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "fromInternalBalance",
+              "type": "bool"
+            },
+            {
+              "internalType": "address payable",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "bool",
+              "name": "toInternalBalance",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct BalancerVault.FundManagement",
+          "name": "funds",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "limit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        }
+      ],
+      "name": "swap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "exitPool(bytes32,address,address,(address[],uint256[],bytes,bool))": "8bdb3913",
+    "getPool(bytes32)": "f6c00927",
+    "getPoolTokens(bytes32)": "f94d4668",
+    "joinPool(bytes32,address,address,(address[],uint256[],bytes,bool))": "b95cac28",
+    "swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256)": "52bbbe29"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"recipient\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"contract IAsset[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"minAmountsOut\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"userData\",\"type\":\"bytes\"},{\"internalType\":\"bool\",\"name\":\"toInternalBalance\",\"type\":\"bool\"}],\"internalType\":\"struct BalancerVault.ExitPoolRequest\",\"name\":\"request\",\"type\":\"tuple\"}],\"name\":\"exitPool\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"enum BalancerVault.PoolSpecialization\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"}],\"name\":\"getPoolTokens\",\"outputs\":[{\"internalType\":\"contract ERC20[]\",\"name\":\"tokens\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"balances\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256\",\"name\":\"maxBlockNumber\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"contract IAsset[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"maxAmountsIn\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"userData\",\"type\":\"bytes\"},{\"internalType\":\"bool\",\"name\":\"fromInternalBalance\",\"type\":\"bool\"}],\"internalType\":\"struct BalancerVault.JoinPoolRequest\",\"name\":\"request\",\"type\":\"tuple\"}],\"name\":\"joinPool\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"poolId\",\"type\":\"bytes32\"},{\"internalType\":\"enum BalancerVault.SwapKind\",\"name\":\"kind\",\"type\":\"uint8\"},{\"internalType\":\"contract IAsset\",\"name\":\"assetIn\",\"type\":\"address\"},{\"internalType\":\"contract IAsset\",\"name\":\"assetOut\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"userData\",\"type\":\"bytes\"}],\"internalType\":\"struct BalancerVault.SingleSwap\",\"name\":\"singleSwap\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"fromInternalBalance\",\"type\":\"bool\"},{\"internalType\":\"address payable\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"toInternalBalance\",\"type\":\"bool\"}],\"internalType\":\"struct BalancerVault.FundManagement\",\"name\":\"funds\",\"type\":\"tuple\"},{\"internalType\":\"uint256\",\"name\":\"limit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"name\":\"swap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/sense-v1/pkg/core/src/external/balancer/Vault.sol\":\"BalancerVault\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[\":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/\",\":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/\",\":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/\",\":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/\",\":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/\",\":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/\",\":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/\",\":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/\",\":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/\",\":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/\",\":balancer-v2-monorepo/=lib/space-v1/lib/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/\",\":hardhat/=lib/sense-v1/node_modules/hardhat/\",\":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/\",\":sense-v1-core/=lib/sense-v1/pkg/core/src/\",\":sense-v1-utils/=lib/sense-v1/pkg/utils/src/\",\":sense-v1/=lib/sense-v1/pkg/core/src/\",\":solmate/=lib/solmate/src/\",\":space-v1/=lib/space-v1/src/\"]},\"sources\":{\"lib/sense-v1/pkg/core/src/external/balancer/Vault.sol\":{\"keccak256\":\"0xaa64305ea3d548359f9f0675db2cff4ebd1005068d08ef9b2819b19777448416\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://98c056ed45c436f3210662e486faf5007d6f35f4e87fe77fa1298ad1b7025f2a\",\"dweb:/ipfs/QmeXCxVKPL3GhiVsH4dt8N6HahkEZmDaicPYo2wQZuXviw\"]},\"lib/solmate/src/tokens/ERC20.sol\":{\"keccak256\":\"0x43aa1509bb753f053143530705d9c4eee415691d26a4779769bf028a74e6ac69\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fb440672ebad7d487c1600e406e140fd1ffc4bd7520c86b5709183ca2602da58\",\"dweb:/ipfs/QmNgZaBoAZwnwm4mTL1cUZnMtvt1iZnruMnfpJnDu6upuc\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address payable",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "struct BalancerVault.ExitPoolRequest",
+              "name": "request",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "contract IAsset[]",
+                  "name": "assets",
+                  "type": "address[]"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "minAmountsOut",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "userData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "toInternalBalance",
+                  "type": "bool"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "exitPool"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPool",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "enum BalancerVault.PoolSpecialization",
+              "name": "",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPoolTokens",
+          "outputs": [
+            {
+              "internalType": "contract ERC20[]",
+              "name": "tokens",
+              "type": "address[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "balances",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxBlockNumber",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "poolId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "recipient",
+              "type": "address"
+            },
+            {
+              "internalType": "struct BalancerVault.JoinPoolRequest",
+              "name": "request",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "contract IAsset[]",
+                  "name": "assets",
+                  "type": "address[]"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "maxAmountsIn",
+                  "type": "uint256[]"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "userData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "fromInternalBalance",
+                  "type": "bool"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "joinPool"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct BalancerVault.SingleSwap",
+              "name": "singleSwap",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "bytes32",
+                  "name": "poolId",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "enum BalancerVault.SwapKind",
+                  "name": "kind",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "contract IAsset",
+                  "name": "assetIn",
+                  "type": "address"
+                },
+                {
+                  "internalType": "contract IAsset",
+                  "name": "assetOut",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "userData",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "struct BalancerVault.FundManagement",
+              "name": "funds",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "sender",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "fromInternalBalance",
+                  "type": "bool"
+                },
+                {
+                  "internalType": "address payable",
+                  "name": "recipient",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "toInternalBalance",
+                  "type": "bool"
+                }
+              ]
+            },
+            {
+              "internalType": "uint256",
+              "name": "limit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "swap",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/",
+        ":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/",
+        ":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/",
+        ":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/",
+        ":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/",
+        ":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/",
+        ":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/",
+        ":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/",
+        ":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/",
+        ":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/",
+        ":balancer-v2-monorepo/=lib/space-v1/lib/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/",
+        ":hardhat/=lib/sense-v1/node_modules/hardhat/",
+        ":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/",
+        ":sense-v1-core/=lib/sense-v1/pkg/core/src/",
+        ":sense-v1-utils/=lib/sense-v1/pkg/utils/src/",
+        ":sense-v1/=lib/sense-v1/pkg/core/src/",
+        ":solmate/=lib/solmate/src/",
+        ":space-v1/=lib/space-v1/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 10000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol": "BalancerVault"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol": {
+        "keccak256": "0xaa64305ea3d548359f9f0675db2cff4ebd1005068d08ef9b2819b19777448416",
+        "urls": [
+          "bzz-raw://98c056ed45c436f3210662e486faf5007d6f35f4e87fe77fa1298ad1b7025f2a",
+          "dweb:/ipfs/QmeXCxVKPL3GhiVsH4dt8N6HahkEZmDaicPYo2wQZuXviw"
+        ],
+        "license": "AGPL-3.0-only"
+      },
+      "lib/solmate/src/tokens/ERC20.sol": {
+        "keccak256": "0x43aa1509bb753f053143530705d9c4eee415691d26a4779769bf028a74e6ac69",
+        "urls": [
+          "bzz-raw://fb440672ebad7d487c1600e406e140fd1ffc4bd7520c86b5709183ca2602da58",
+          "dweb:/ipfs/QmNgZaBoAZwnwm4mTL1cUZnMtvt1iZnruMnfpJnDu6upuc"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/sense-v1/pkg/core/src/external/balancer/Vault.sol",
+    "id": 23865,
+    "exportedSymbols": {
+      "BalancerVault": [
+        23864
+      ],
+      "ERC20": [
+        26855
+      ],
+      "IAsset": [
+        23744
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:1729:40",
+    "nodes": [
+      {
+        "id": 23741,
+        "nodeType": "PragmaDirective",
+        "src": "42:23:40",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 23743,
+        "nodeType": "ImportDirective",
+        "src": "67:49:40",
+        "nodes": [],
+        "absolutePath": "lib/solmate/src/tokens/ERC20.sol",
+        "file": "solmate/tokens/ERC20.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 23865,
+        "sourceUnit": 26856,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 23742,
+              "name": "ERC20",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 26855,
+              "src": "76:5:40",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 23744,
+        "nodeType": "ContractDefinition",
+        "src": "118:19:40",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAsset",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          23744
+        ],
+        "name": "IAsset",
+        "nameLocation": "128:6:40",
+        "scope": 23865,
+        "usedErrors": []
+      },
+      {
+        "id": 23864,
+        "nodeType": "ContractDefinition",
+        "src": "139:1631:40",
+        "nodes": [
+          {
+            "id": 23756,
+            "nodeType": "StructDefinition",
+            "src": "169:145:40",
+            "nodes": [],
+            "canonicalName": "BalancerVault.JoinPoolRequest",
+            "members": [
+              {
+                "constant": false,
+                "id": 23748,
+                "mutability": "mutable",
+                "name": "assets",
+                "nameLocation": "211:6:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23756,
+                "src": "202:15:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_contract$_IAsset_$23744_$dyn_storage_ptr",
+                  "typeString": "contract IAsset[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 23746,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23745,
+                      "name": "IAsset",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23744,
+                      "src": "202:6:40"
+                    },
+                    "referencedDeclaration": 23744,
+                    "src": "202:6:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IAsset_$23744",
+                      "typeString": "contract IAsset"
+                    }
+                  },
+                  "id": 23747,
+                  "nodeType": "ArrayTypeName",
+                  "src": "202:8:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IAsset_$23744_$dyn_storage_ptr",
+                    "typeString": "contract IAsset[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23751,
+                "mutability": "mutable",
+                "name": "maxAmountsIn",
+                "nameLocation": "237:12:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23756,
+                "src": "227:22:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                  "typeString": "uint256[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 23749,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "227:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 23750,
+                  "nodeType": "ArrayTypeName",
+                  "src": "227:9:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                    "typeString": "uint256[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23753,
+                "mutability": "mutable",
+                "name": "userData",
+                "nameLocation": "265:8:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23756,
+                "src": "259:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 23752,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "259:5:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23755,
+                "mutability": "mutable",
+                "name": "fromInternalBalance",
+                "nameLocation": "288:19:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23756,
+                "src": "283:24:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 23754,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "283:4:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "JoinPoolRequest",
+            "nameLocation": "176:15:40",
+            "scope": 23864,
+            "visibility": "public"
+          },
+          {
+            "id": 23768,
+            "nodeType": "StructDefinition",
+            "src": "319:144:40",
+            "nodes": [],
+            "canonicalName": "BalancerVault.ExitPoolRequest",
+            "members": [
+              {
+                "constant": false,
+                "id": 23760,
+                "mutability": "mutable",
+                "name": "assets",
+                "nameLocation": "361:6:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23768,
+                "src": "352:15:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_contract$_IAsset_$23744_$dyn_storage_ptr",
+                  "typeString": "contract IAsset[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 23758,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23757,
+                      "name": "IAsset",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23744,
+                      "src": "352:6:40"
+                    },
+                    "referencedDeclaration": 23744,
+                    "src": "352:6:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IAsset_$23744",
+                      "typeString": "contract IAsset"
+                    }
+                  },
+                  "id": 23759,
+                  "nodeType": "ArrayTypeName",
+                  "src": "352:8:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_IAsset_$23744_$dyn_storage_ptr",
+                    "typeString": "contract IAsset[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23763,
+                "mutability": "mutable",
+                "name": "minAmountsOut",
+                "nameLocation": "387:13:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23768,
+                "src": "377:23:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                  "typeString": "uint256[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 23761,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "377:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 23762,
+                  "nodeType": "ArrayTypeName",
+                  "src": "377:9:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                    "typeString": "uint256[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23765,
+                "mutability": "mutable",
+                "name": "userData",
+                "nameLocation": "416:8:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23768,
+                "src": "410:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 23764,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "410:5:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23767,
+                "mutability": "mutable",
+                "name": "toInternalBalance",
+                "nameLocation": "439:17:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23768,
+                "src": "434:22:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 23766,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "434:4:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ExitPoolRequest",
+            "nameLocation": "326:15:40",
+            "scope": 23864,
+            "visibility": "public"
+          },
+          {
+            "id": 23772,
+            "nodeType": "EnumDefinition",
+            "src": "468:93:40",
+            "nodes": [],
+            "canonicalName": "BalancerVault.PoolSpecialization",
+            "members": [
+              {
+                "id": 23769,
+                "name": "GENERAL",
+                "nameLocation": "502:7:40",
+                "nodeType": "EnumValue",
+                "src": "502:7:40"
+              },
+              {
+                "id": 23770,
+                "name": "MINIMAL_SWAP_INFO",
+                "nameLocation": "519:17:40",
+                "nodeType": "EnumValue",
+                "src": "519:17:40"
+              },
+              {
+                "id": 23771,
+                "name": "TWO_TOKEN",
+                "nameLocation": "546:9:40",
+                "nodeType": "EnumValue",
+                "src": "546:9:40"
+              }
+            ],
+            "name": "PoolSpecialization",
+            "nameLocation": "473:18:40"
+          },
+          {
+            "id": 23775,
+            "nodeType": "EnumDefinition",
+            "src": "566:57:40",
+            "nodes": [],
+            "canonicalName": "BalancerVault.SwapKind",
+            "members": [
+              {
+                "id": 23773,
+                "name": "GIVEN_IN",
+                "nameLocation": "590:8:40",
+                "nodeType": "EnumValue",
+                "src": "590:8:40"
+              },
+              {
+                "id": 23774,
+                "name": "GIVEN_OUT",
+                "nameLocation": "608:9:40",
+                "nodeType": "EnumValue",
+                "src": "608:9:40"
+              }
+            ],
+            "name": "SwapKind",
+            "nameLocation": "571:8:40"
+          },
+          {
+            "id": 23791,
+            "nodeType": "StructDefinition",
+            "src": "628:169:40",
+            "nodes": [],
+            "canonicalName": "BalancerVault.SingleSwap",
+            "members": [
+              {
+                "constant": false,
+                "id": 23777,
+                "mutability": "mutable",
+                "name": "poolId",
+                "nameLocation": "664:6:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23791,
+                "src": "656:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 23776,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "656:7:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23780,
+                "mutability": "mutable",
+                "name": "kind",
+                "nameLocation": "689:4:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23791,
+                "src": "680:13:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SwapKind_$23775",
+                  "typeString": "enum BalancerVault.SwapKind"
+                },
+                "typeName": {
+                  "id": 23779,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 23778,
+                    "name": "SwapKind",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 23775,
+                    "src": "680:8:40"
+                  },
+                  "referencedDeclaration": 23775,
+                  "src": "680:8:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SwapKind_$23775",
+                    "typeString": "enum BalancerVault.SwapKind"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23783,
+                "mutability": "mutable",
+                "name": "assetIn",
+                "nameLocation": "710:7:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23791,
+                "src": "703:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IAsset_$23744",
+                  "typeString": "contract IAsset"
+                },
+                "typeName": {
+                  "id": 23782,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 23781,
+                    "name": "IAsset",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 23744,
+                    "src": "703:6:40"
+                  },
+                  "referencedDeclaration": 23744,
+                  "src": "703:6:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IAsset_$23744",
+                    "typeString": "contract IAsset"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23786,
+                "mutability": "mutable",
+                "name": "assetOut",
+                "nameLocation": "734:8:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23791,
+                "src": "727:15:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_IAsset_$23744",
+                  "typeString": "contract IAsset"
+                },
+                "typeName": {
+                  "id": 23785,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 23784,
+                    "name": "IAsset",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 23744,
+                    "src": "727:6:40"
+                  },
+                  "referencedDeclaration": 23744,
+                  "src": "727:6:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IAsset_$23744",
+                    "typeString": "contract IAsset"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23788,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "760:6:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23791,
+                "src": "752:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 23787,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "752:7:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23790,
+                "mutability": "mutable",
+                "name": "userData",
+                "nameLocation": "782:8:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23791,
+                "src": "776:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes_storage_ptr",
+                  "typeString": "bytes"
+                },
+                "typeName": {
+                  "id": 23789,
+                  "name": "bytes",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "776:5:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_storage_ptr",
+                    "typeString": "bytes"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "SingleSwap",
+            "nameLocation": "635:10:40",
+            "scope": 23864,
+            "visibility": "public"
+          },
+          {
+            "id": 23800,
+            "nodeType": "StructDefinition",
+            "src": "802:154:40",
+            "nodes": [],
+            "canonicalName": "BalancerVault.FundManagement",
+            "members": [
+              {
+                "constant": false,
+                "id": 23793,
+                "mutability": "mutable",
+                "name": "sender",
+                "nameLocation": "842:6:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23800,
+                "src": "834:14:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 23792,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "834:7:40",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23795,
+                "mutability": "mutable",
+                "name": "fromInternalBalance",
+                "nameLocation": "863:19:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23800,
+                "src": "858:24:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 23794,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "858:4:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23797,
+                "mutability": "mutable",
+                "name": "recipient",
+                "nameLocation": "908:9:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23800,
+                "src": "892:25:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address_payable",
+                  "typeString": "address payable"
+                },
+                "typeName": {
+                  "id": 23796,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "892:15:40",
+                  "stateMutability": "payable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 23799,
+                "mutability": "mutable",
+                "name": "toInternalBalance",
+                "nameLocation": "932:17:40",
+                "nodeType": "VariableDeclaration",
+                "scope": 23800,
+                "src": "927:22:40",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 23798,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "927:4:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "FundManagement",
+            "nameLocation": "809:14:40",
+            "scope": 23864,
+            "visibility": "public"
+          },
+          {
+            "id": 23814,
+            "nodeType": "FunctionDefinition",
+            "src": "962:206:40",
+            "nodes": [],
+            "functionSelector": "f94d4668",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPoolTokens",
+            "nameLocation": "971:13:40",
+            "parameters": {
+              "id": 23803,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23802,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "993:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23814,
+                  "src": "985:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 23801,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "985:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "984:16:40"
+            },
+            "returnParameters": {
+              "id": 23813,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23807,
+                  "mutability": "mutable",
+                  "name": "tokens",
+                  "nameLocation": "1076:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23814,
+                  "src": "1061:21:40",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_contract$_ERC20_$26855_$dyn_memory_ptr",
+                    "typeString": "contract ERC20[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 23805,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 23804,
+                        "name": "ERC20",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 26855,
+                        "src": "1061:5:40"
+                      },
+                      "referencedDeclaration": 26855,
+                      "src": "1061:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ERC20_$26855",
+                        "typeString": "contract ERC20"
+                      }
+                    },
+                    "id": 23806,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1061:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_contract$_ERC20_$26855_$dyn_storage_ptr",
+                      "typeString": "contract ERC20[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23810,
+                  "mutability": "mutable",
+                  "name": "balances",
+                  "nameLocation": "1113:8:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23814,
+                  "src": "1096:25:40",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 23808,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1096:7:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 23809,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1096:9:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23812,
+                  "mutability": "mutable",
+                  "name": "maxBlockNumber",
+                  "nameLocation": "1143:14:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23814,
+                  "src": "1135:22:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 23811,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1135:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1047:120:40"
+            },
+            "scope": 23864,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 23824,
+            "nodeType": "FunctionDefinition",
+            "src": "1174:85:40",
+            "nodes": [],
+            "functionSelector": "f6c00927",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPool",
+            "nameLocation": "1183:7:40",
+            "parameters": {
+              "id": 23817,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23816,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "1199:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23824,
+                  "src": "1191:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 23815,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1191:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1190:16:40"
+            },
+            "returnParameters": {
+              "id": 23823,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23819,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23824,
+                  "src": "1230:7:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 23818,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1230:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23822,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23824,
+                  "src": "1239:18:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PoolSpecialization_$23772",
+                    "typeString": "enum BalancerVault.PoolSpecialization"
+                  },
+                  "typeName": {
+                    "id": 23821,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23820,
+                      "name": "PoolSpecialization",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23772,
+                      "src": "1239:18:40"
+                    },
+                    "referencedDeclaration": 23772,
+                    "src": "1239:18:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_PoolSpecialization_$23772",
+                      "typeString": "enum BalancerVault.PoolSpecialization"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1229:29:40"
+            },
+            "scope": 23864,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 23839,
+            "nodeType": "FunctionDefinition",
+            "src": "1265:179:40",
+            "nodes": [],
+            "functionSelector": "52bbbe29",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swap",
+            "nameLocation": "1274:4:40",
+            "parameters": {
+              "id": 23835,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23827,
+                  "mutability": "mutable",
+                  "name": "singleSwap",
+                  "nameLocation": "1306:10:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23839,
+                  "src": "1288:28:40",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_SingleSwap_$23791_memory_ptr",
+                    "typeString": "struct BalancerVault.SingleSwap"
+                  },
+                  "typeName": {
+                    "id": 23826,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23825,
+                      "name": "SingleSwap",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23791,
+                      "src": "1288:10:40"
+                    },
+                    "referencedDeclaration": 23791,
+                    "src": "1288:10:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_SingleSwap_$23791_storage_ptr",
+                      "typeString": "struct BalancerVault.SingleSwap"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23830,
+                  "mutability": "mutable",
+                  "name": "funds",
+                  "nameLocation": "1348:5:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23839,
+                  "src": "1326:27:40",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_FundManagement_$23800_memory_ptr",
+                    "typeString": "struct BalancerVault.FundManagement"
+                  },
+                  "typeName": {
+                    "id": 23829,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23828,
+                      "name": "FundManagement",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23800,
+                      "src": "1326:14:40"
+                    },
+                    "referencedDeclaration": 23800,
+                    "src": "1326:14:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_FundManagement_$23800_storage_ptr",
+                      "typeString": "struct BalancerVault.FundManagement"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23832,
+                  "mutability": "mutable",
+                  "name": "limit",
+                  "nameLocation": "1371:5:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23839,
+                  "src": "1363:13:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 23831,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1363:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23834,
+                  "mutability": "mutable",
+                  "name": "deadline",
+                  "nameLocation": "1394:8:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23839,
+                  "src": "1386:16:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 23833,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1386:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1278:130:40"
+            },
+            "returnParameters": {
+              "id": 23838,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23837,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23839,
+                  "src": "1435:7:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 23836,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1435:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1434:9:40"
+            },
+            "scope": 23864,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 23851,
+            "nodeType": "FunctionDefinition",
+            "src": "1450:156:40",
+            "nodes": [],
+            "functionSelector": "b95cac28",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "joinPool",
+            "nameLocation": "1459:8:40",
+            "parameters": {
+              "id": 23849,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23841,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "1485:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23851,
+                  "src": "1477:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 23840,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1477:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23843,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "1509:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23851,
+                  "src": "1501:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 23842,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1501:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23845,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "1533:9:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23851,
+                  "src": "1525:17:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 23844,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1525:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23848,
+                  "mutability": "mutable",
+                  "name": "request",
+                  "nameLocation": "1575:7:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23851,
+                  "src": "1552:30:40",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_JoinPoolRequest_$23756_memory_ptr",
+                    "typeString": "struct BalancerVault.JoinPoolRequest"
+                  },
+                  "typeName": {
+                    "id": 23847,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23846,
+                      "name": "JoinPoolRequest",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23756,
+                      "src": "1552:15:40"
+                    },
+                    "referencedDeclaration": 23756,
+                    "src": "1552:15:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_JoinPoolRequest_$23756_storage_ptr",
+                      "typeString": "struct BalancerVault.JoinPoolRequest"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1467:121:40"
+            },
+            "returnParameters": {
+              "id": 23850,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1605:0:40"
+            },
+            "scope": 23864,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 23863,
+            "nodeType": "FunctionDefinition",
+            "src": "1612:156:40",
+            "nodes": [],
+            "functionSelector": "8bdb3913",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "exitPool",
+            "nameLocation": "1621:8:40",
+            "parameters": {
+              "id": 23861,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23853,
+                  "mutability": "mutable",
+                  "name": "poolId",
+                  "nameLocation": "1647:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23863,
+                  "src": "1639:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 23852,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1639:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23855,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "1671:6:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23863,
+                  "src": "1663:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 23854,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1663:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23857,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "1703:9:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23863,
+                  "src": "1687:25:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 23856,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1687:15:40",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23860,
+                  "mutability": "mutable",
+                  "name": "request",
+                  "nameLocation": "1745:7:40",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23863,
+                  "src": "1722:30:40",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_ExitPoolRequest_$23768_memory_ptr",
+                    "typeString": "struct BalancerVault.ExitPoolRequest"
+                  },
+                  "typeName": {
+                    "id": 23859,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 23858,
+                      "name": "ExitPoolRequest",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 23768,
+                      "src": "1722:15:40"
+                    },
+                    "referencedDeclaration": 23768,
+                    "src": "1722:15:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ExitPoolRequest_$23768_storage_ptr",
+                      "typeString": "struct BalancerVault.ExitPoolRequest"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1629:129:40"
+            },
+            "returnParameters": {
+              "id": 23862,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1767:0:40"
+            },
+            "scope": 23864,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "BalancerVault",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          23864
+        ],
+        "name": "BalancerVault",
+        "nameLocation": "149:13:40",
+        "scope": 23865,
+        "usedErrors": []
+      }
+    ],
+    "license": "AGPL-3.0-only"
+  },
+  "id": 40
+}

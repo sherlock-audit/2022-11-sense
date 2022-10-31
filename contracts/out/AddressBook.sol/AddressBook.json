@@ -1,0 +1,568 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "BALANCER_VAULT",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "DIVIDER_1_2_0",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PERIPHERY_1_3_0",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SENSE_DEPLOYER",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SENSE_MULTISIG",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SPACE_FACTORY_1_3_0",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x61018261003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061007c5760003560e01c8063499e6cea1161005a578063499e6cea146100fb5780637e593ba814610116578063bc1638461461013157600080fd5b80630efdd99e146100815780632f396166146100c557806343fc4cc1146100e0575b600080fd5b61009c7319f3bf5d7f8a58945da80eaa4131df2958f7aa4a81565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b61009c7393158100b4351935c9bc2de9a33357c4d54d94bb81565b61009c7309b10e45a912bcd4e80a8a3119f0cfccad1e1f1281565b61009c73f13519734649f7464e5be4aa91987a35594b2b1681565b61009c73876cad23753f033e5308cfcc66e7608645527a9e81565b61009c731ab16cb0cb0e5520e0c081530c679b2e846e4d378156fea26469706673582212200931ac75bf94454485488fbb5bfe9e514d99559bb37b34af4c4fc65eb901d29764736f6c634300080d0033",
+    "sourceMap": "64:1057:89:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;64:1057:89;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x730000000000000000000000000000000000000000301460806040526004361061007c5760003560e01c8063499e6cea1161005a578063499e6cea146100fb5780637e593ba814610116578063bc1638461461013157600080fd5b80630efdd99e146100815780632f396166146100c557806343fc4cc1146100e0575b600080fd5b61009c7319f3bf5d7f8a58945da80eaa4131df2958f7aa4a81565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b61009c7393158100b4351935c9bc2de9a33357c4d54d94bb81565b61009c7309b10e45a912bcd4e80a8a3119f0cfccad1e1f1281565b61009c73f13519734649f7464e5be4aa91987a35594b2b1681565b61009c73876cad23753f033e5308cfcc66e7608645527a9e81565b61009c731ab16cb0cb0e5520e0c081530c679b2e846e4d378156fea26469706673582212200931ac75bf94454485488fbb5bfe9e514d99559bb37b34af4c4fc65eb901d29764736f6c634300080d0033",
+    "sourceMap": "64:1057:89:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;585:83;;626:42;585:83;;;;;198:42:91;186:55;;;168:74;;156:2;141:18;585:83:89;;;;;;;941:88;;987:42;941:88;;763:82;;803:42;763:82;;674:83;;715:42;674:83;;851:84;;893:42;851:84;;1035:83;;1076:42;1035:83;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "BALANCER_VAULT()": "bc163846",
+    "DIVIDER_1_2_0()": "43fc4cc1",
+    "PERIPHERY_1_3_0()": "7e593ba8",
+    "SENSE_DEPLOYER()": "499e6cea",
+    "SENSE_MULTISIG()": "0efdd99e",
+    "SPACE_FACTORY_1_3_0()": "2f396166"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"BALANCER_VAULT\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"DIVIDER_1_2_0\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PERIPHERY_1_3_0\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SENSE_DEPLOYER\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SENSE_MULTISIG\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"SPACE_FACTORY_1_3_0\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/test/utils/AddressBook.sol\":\"AddressBook\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[\":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/\",\":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/\",\":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/\",\":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/\",\":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/\",\":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/\",\":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/\",\":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/\",\":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/\",\":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/\",\":balancer-v2-monorepo/=lib/space-v1/lib/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/\",\":hardhat/=lib/sense-v1/node_modules/hardhat/\",\":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/\",\":sense-v1-core/=lib/sense-v1/pkg/core/src/\",\":sense-v1-utils/=lib/sense-v1/pkg/utils/src/\",\":sense-v1/=lib/sense-v1/pkg/core/src/\",\":solmate/=lib/solmate/src/\",\":space-v1/=lib/space-v1/src/\"]},\"sources\":{\"src/test/utils/AddressBook.sol\":{\"keccak256\":\"0x3f08c18c3e04287daf922a718e6a6a43dfaf482ad6d7ae62c98547d77a787574\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://5f121417337745ba0b2da58a4f99cbb5d7e45efe5f834d452d05851b71509cb5\",\"dweb:/ipfs/QmYs2GUUYH8cegZCcvNV33xPtfwgJ6JPfjwE3YZ1o89Wsp\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "BALANCER_VAULT",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "DIVIDER_1_2_0",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "PERIPHERY_1_3_0",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "SENSE_DEPLOYER",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "SENSE_MULTISIG",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "SPACE_FACTORY_1_3_0",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/",
+        ":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/",
+        ":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/",
+        ":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/",
+        ":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/",
+        ":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/",
+        ":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/",
+        ":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/",
+        ":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/",
+        ":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/",
+        ":balancer-v2-monorepo/=lib/space-v1/lib/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/",
+        ":hardhat/=lib/sense-v1/node_modules/hardhat/",
+        ":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/",
+        ":sense-v1-core/=lib/sense-v1/pkg/core/src/",
+        ":sense-v1-utils/=lib/sense-v1/pkg/utils/src/",
+        ":sense-v1/=lib/sense-v1/pkg/core/src/",
+        ":solmate/=lib/solmate/src/",
+        ":space-v1/=lib/space-v1/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 10000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/test/utils/AddressBook.sol": "AddressBook"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/test/utils/AddressBook.sol": {
+        "keccak256": "0x3f08c18c3e04287daf922a718e6a6a43dfaf482ad6d7ae62c98547d77a787574",
+        "urls": [
+          "bzz-raw://5f121417337745ba0b2da58a4f99cbb5d7e45efe5f834d452d05851b71509cb5",
+          "dweb:/ipfs/QmYs2GUUYH8cegZCcvNV33xPtfwgJ6JPfjwE3YZ1o89Wsp"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/test/utils/AddressBook.sol",
+    "id": 37470,
+    "exportedSymbols": {
+      "AddressBook": [
+        37469
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1082:89",
+    "nodes": [
+      {
+        "id": 37450,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:89",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 37469,
+        "nodeType": "ContractDefinition",
+        "src": "64:1057:89",
+        "nodes": [
+          {
+            "id": 37453,
+            "nodeType": "VariableDeclaration",
+            "src": "585:83:89",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "0efdd99e",
+            "mutability": "constant",
+            "name": "SENSE_MULTISIG",
+            "nameLocation": "609:14:89",
+            "scope": 37469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37451,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "585:7:89",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307831396633624635643746384135383934354441383065614134313331444632393538663741413441",
+              "id": 37452,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "626:42:89",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x19f3bF5d7F8A58945DA80eaA4131DF2958f7AA4A"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37456,
+            "nodeType": "VariableDeclaration",
+            "src": "674:83:89",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "499e6cea",
+            "mutability": "constant",
+            "name": "SENSE_DEPLOYER",
+            "nameLocation": "698:14:89",
+            "scope": 37469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37454,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "674:7:89",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307846313335313937333436343946373436344535424534616139313938374133353539346232423136",
+              "id": 37455,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "715:42:89",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0xF13519734649F7464E5BE4aa91987A35594b2B16"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37459,
+            "nodeType": "VariableDeclaration",
+            "src": "763:82:89",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "43fc4cc1",
+            "mutability": "constant",
+            "name": "DIVIDER_1_2_0",
+            "nameLocation": "787:13:89",
+            "scope": 37469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37457,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "763:7:89",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307830394231304534354139313242634434453830613841333131396630636643636164316531663132",
+              "id": 37458,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "803:42:89",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x09B10E45A912BcD4E80a8A3119f0cfCcad1e1f12"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37462,
+            "nodeType": "VariableDeclaration",
+            "src": "851:84:89",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "7e593ba8",
+            "mutability": "constant",
+            "name": "PERIPHERY_1_3_0",
+            "nameLocation": "875:15:89",
+            "scope": 37469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37460,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "851:7:89",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307838373643614432333735334630333345353330384346636336364537363038363435353237613965",
+              "id": 37461,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "893:42:89",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x876CaD23753F033E5308CFcc66E7608645527a9e"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37465,
+            "nodeType": "VariableDeclaration",
+            "src": "941:88:89",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "2f396166",
+            "mutability": "constant",
+            "name": "SPACE_FACTORY_1_3_0",
+            "nameLocation": "965:19:89",
+            "scope": 37469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37463,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "941:7:89",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307839333135383130304234333531393335633942433244453941333333353763344435344439344262",
+              "id": 37464,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "987:42:89",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x93158100B4351935c9BC2DE9A33357c4D54D94Bb"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 37468,
+            "nodeType": "VariableDeclaration",
+            "src": "1035:83:89",
+            "nodes": [],
+            "constant": true,
+            "functionSelector": "bc163846",
+            "mutability": "constant",
+            "name": "BALANCER_VAULT",
+            "nameLocation": "1059:14:89",
+            "scope": 37469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 37466,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1035:7:89",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307831614231364342306362306535353230653043303831353330433637394232653834366534443337",
+              "id": 37467,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1076:42:89",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x1aB16CB0cb0e5520e0C081530C679B2e846e4D37"
+            },
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "AddressBook",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          37469
+        ],
+        "name": "AddressBook",
+        "nameLocation": "72:11:89",
+        "scope": 37470,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 89
+}

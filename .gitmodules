@@ -1,0 +1,15 @@
+[submodule "contracts/lib/ds-test"]
+	path = contracts/lib/ds-test
+	url = https://github.com/dapphub/ds-test
+[submodule "contracts/lib/forge-std"]
+	path = contracts/lib/forge-std
+	url = https://github.com/brockelmore/forge-std
+[submodule "contracts/lib/solmate"]
+	path = contracts/lib/solmate
+	url = https://github.com/rari-capital/solmate
+[submodule "contracts/lib/sense-v1"]
+	path = contracts/lib/sense-v1
+	url = https://github.com/sense-finance/sense-v1
+[submodule "contracts/lib/space-v1"]
+	path = contracts/lib/space-v1
+	url = https://github.com/sense-finance/space-v1

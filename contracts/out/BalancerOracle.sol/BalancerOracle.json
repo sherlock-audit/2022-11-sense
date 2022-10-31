@@ -1,0 +1,904 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLargestSafeQueryWindow",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum BalancerOracle.Variable",
+          "name": "variable",
+          "type": "uint8"
+        }
+      ],
+      "name": "getLatest",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum BalancerOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ago",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BalancerOracle.OracleAccumulatorQuery[]",
+          "name": "queries",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "getPastAccumulators",
+      "outputs": [
+        {
+          "internalType": "int256[]",
+          "name": "results",
+          "type": "int256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum BalancerOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "secs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ago",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BalancerOracle.OracleAverageQuery[]",
+          "name": "queries",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "getTimeWeightedAverage",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "results",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getLargestSafeQueryWindow()": "ffd088eb",
+    "getLatest(uint8)": "b10be739",
+    "getPastAccumulators((uint8,uint256)[])": "6b843239",
+    "getTimeWeightedAverage((uint8,uint256,uint256)[])": "1dccd830"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLargestSafeQueryWindow\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum BalancerOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"}],\"name\":\"getLatest\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum BalancerOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"ago\",\"type\":\"uint256\"}],\"internalType\":\"struct BalancerOracle.OracleAccumulatorQuery[]\",\"name\":\"queries\",\"type\":\"tuple[]\"}],\"name\":\"getPastAccumulators\",\"outputs\":[{\"internalType\":\"int256[]\",\"name\":\"results\",\"type\":\"int256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum BalancerOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"secs\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"ago\",\"type\":\"uint256\"}],\"internalType\":\"struct BalancerOracle.OracleAverageQuery[]\",\"name\":\"queries\",\"type\":\"tuple[]\"}],\"name\":\"getTimeWeightedAverage\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"results\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/BalancerOracle.sol\":\"BalancerOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[\":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/\",\":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/\",\":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/\",\":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/\",\":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/\",\":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/\",\":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/\",\":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/\",\":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/\",\":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/\",\":balancer-v2-monorepo/=lib/space-v1/lib/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/\",\":hardhat/=lib/sense-v1/node_modules/hardhat/\",\":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/\",\":sense-v1-core/=lib/sense-v1/pkg/core/src/\",\":sense-v1-utils/=lib/sense-v1/pkg/utils/src/\",\":sense-v1/=lib/sense-v1/pkg/core/src/\",\":solmate/=lib/solmate/src/\",\":space-v1/=lib/space-v1/src/\"]},\"sources\":{\"src/interfaces/BalancerOracle.sol\":{\"keccak256\":\"0x7390680ad60814734b5a1f3d85dbc59a44336fd08045c67021d205eb63e34aac\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://87effadb07fb5e90efb26baa374aea2a872397eeac6de033ff9cc158fd28d46f\",\"dweb:/ipfs/QmPeWdS3R7xQkWRnmfcsY3ZjAWj1242Ygh38NFra5f283p\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLargestSafeQueryWindow",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "enum BalancerOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getLatest",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct BalancerOracle.OracleAccumulatorQuery[]",
+              "name": "queries",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum BalancerOracle.Variable",
+                  "name": "variable",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "ago",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPastAccumulators",
+          "outputs": [
+            {
+              "internalType": "int256[]",
+              "name": "results",
+              "type": "int256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct BalancerOracle.OracleAverageQuery[]",
+              "name": "queries",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum BalancerOracle.Variable",
+                  "name": "variable",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "secs",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "ago",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTimeWeightedAverage",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "results",
+              "type": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/",
+        ":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/",
+        ":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/",
+        ":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/",
+        ":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/",
+        ":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/",
+        ":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/",
+        ":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/",
+        ":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/",
+        ":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/",
+        ":balancer-v2-monorepo/=lib/space-v1/lib/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/",
+        ":hardhat/=lib/sense-v1/node_modules/hardhat/",
+        ":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/",
+        ":sense-v1-core/=lib/sense-v1/pkg/core/src/",
+        ":sense-v1-utils/=lib/sense-v1/pkg/utils/src/",
+        ":sense-v1/=lib/sense-v1/pkg/core/src/",
+        ":solmate/=lib/solmate/src/",
+        ":space-v1/=lib/space-v1/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 10000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/interfaces/BalancerOracle.sol": "BalancerOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/interfaces/BalancerOracle.sol": {
+        "keccak256": "0x7390680ad60814734b5a1f3d85dbc59a44336fd08045c67021d205eb63e34aac",
+        "urls": [
+          "bzz-raw://87effadb07fb5e90efb26baa374aea2a872397eeac6de033ff9cc158fd28d46f",
+          "dweb:/ipfs/QmPeWdS3R7xQkWRnmfcsY3ZjAWj1242Ygh38NFra5f283p"
+        ],
+        "license": "AGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/BalancerOracle.sol",
+    "id": 32441,
+    "exportedSymbols": {
+      "BalancerOracle": [
+        32440
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:756:85",
+    "nodes": [
+      {
+        "id": 32388,
+        "nodeType": "PragmaDirective",
+        "src": "42:23:85",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 32440,
+        "nodeType": "ContractDefinition",
+        "src": "67:730:85",
+        "nodes": [
+          {
+            "id": 32392,
+            "nodeType": "EnumDefinition",
+            "src": "98:50:85",
+            "nodes": [],
+            "canonicalName": "BalancerOracle.Variable",
+            "members": [
+              {
+                "id": 32389,
+                "name": "PAIR_PRICE",
+                "nameLocation": "114:10:85",
+                "nodeType": "EnumValue",
+                "src": "114:10:85"
+              },
+              {
+                "id": 32390,
+                "name": "BPT_PRICE",
+                "nameLocation": "126:9:85",
+                "nodeType": "EnumValue",
+                "src": "126:9:85"
+              },
+              {
+                "id": 32391,
+                "name": "INVARIANT",
+                "nameLocation": "137:9:85",
+                "nodeType": "EnumValue",
+                "src": "137:9:85"
+              }
+            ],
+            "name": "Variable",
+            "nameLocation": "103:8:85"
+          },
+          {
+            "id": 32402,
+            "nodeType": "FunctionDefinition",
+            "src": "154:142:85",
+            "nodes": [],
+            "functionSelector": "1dccd830",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTimeWeightedAverage",
+            "nameLocation": "163:22:85",
+            "parameters": {
+              "id": 32397,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32396,
+                  "mutability": "mutable",
+                  "name": "queries",
+                  "nameLocation": "214:7:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32402,
+                  "src": "186:35:85",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_OracleAverageQuery_$32418_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct BalancerOracle.OracleAverageQuery[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 32394,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 32393,
+                        "name": "OracleAverageQuery",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 32418,
+                        "src": "186:18:85"
+                      },
+                      "referencedDeclaration": 32418,
+                      "src": "186:18:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OracleAverageQuery_$32418_storage_ptr",
+                        "typeString": "struct BalancerOracle.OracleAverageQuery"
+                      }
+                    },
+                    "id": 32395,
+                    "nodeType": "ArrayTypeName",
+                    "src": "186:20:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_OracleAverageQuery_$32418_storage_$dyn_storage_ptr",
+                      "typeString": "struct BalancerOracle.OracleAverageQuery[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "185:37:85"
+            },
+            "returnParameters": {
+              "id": 32401,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32400,
+                  "mutability": "mutable",
+                  "name": "results",
+                  "nameLocation": "287:7:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32402,
+                  "src": "270:24:85",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 32398,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "270:7:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 32399,
+                    "nodeType": "ArrayTypeName",
+                    "src": "270:9:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "269:26:85"
+            },
+            "scope": 32440,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32410,
+            "nodeType": "FunctionDefinition",
+            "src": "302:70:85",
+            "nodes": [],
+            "functionSelector": "b10be739",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatest",
+            "nameLocation": "311:9:85",
+            "parameters": {
+              "id": 32406,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32405,
+                  "mutability": "mutable",
+                  "name": "variable",
+                  "nameLocation": "330:8:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32410,
+                  "src": "321:17:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$32392",
+                    "typeString": "enum BalancerOracle.Variable"
+                  },
+                  "typeName": {
+                    "id": 32404,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 32403,
+                      "name": "Variable",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 32392,
+                      "src": "321:8:85"
+                    },
+                    "referencedDeclaration": 32392,
+                    "src": "321:8:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Variable_$32392",
+                      "typeString": "enum BalancerOracle.Variable"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:19:85"
+            },
+            "returnParameters": {
+              "id": 32409,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32408,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32410,
+                  "src": "363:7:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32407,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "363:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "362:9:85"
+            },
+            "scope": 32440,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32418,
+            "nodeType": "StructDefinition",
+            "src": "378:103:85",
+            "nodes": [],
+            "canonicalName": "BalancerOracle.OracleAverageQuery",
+            "members": [
+              {
+                "constant": false,
+                "id": 32413,
+                "mutability": "mutable",
+                "name": "variable",
+                "nameLocation": "423:8:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 32418,
+                "src": "414:17:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Variable_$32392",
+                  "typeString": "enum BalancerOracle.Variable"
+                },
+                "typeName": {
+                  "id": 32412,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 32411,
+                    "name": "Variable",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 32392,
+                    "src": "414:8:85"
+                  },
+                  "referencedDeclaration": 32392,
+                  "src": "414:8:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$32392",
+                    "typeString": "enum BalancerOracle.Variable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 32415,
+                "mutability": "mutable",
+                "name": "secs",
+                "nameLocation": "449:4:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 32418,
+                "src": "441:12:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 32414,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "441:7:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 32417,
+                "mutability": "mutable",
+                "name": "ago",
+                "nameLocation": "471:3:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 32418,
+                "src": "463:11:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 32416,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "463:7:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OracleAverageQuery",
+            "nameLocation": "385:18:85",
+            "scope": 32440,
+            "visibility": "public"
+          },
+          {
+            "id": 32423,
+            "nodeType": "FunctionDefinition",
+            "src": "487:69:85",
+            "nodes": [],
+            "functionSelector": "ffd088eb",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLargestSafeQueryWindow",
+            "nameLocation": "496:25:85",
+            "parameters": {
+              "id": 32419,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "521:2:85"
+            },
+            "returnParameters": {
+              "id": 32422,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32421,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32423,
+                  "src": "547:7:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32420,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "547:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "546:9:85"
+            },
+            "scope": 32440,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32433,
+            "nodeType": "FunctionDefinition",
+            "src": "562:142:85",
+            "nodes": [],
+            "functionSelector": "6b843239",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPastAccumulators",
+            "nameLocation": "571:19:85",
+            "parameters": {
+              "id": 32428,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32427,
+                  "mutability": "mutable",
+                  "name": "queries",
+                  "nameLocation": "623:7:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32433,
+                  "src": "591:39:85",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_OracleAccumulatorQuery_$32439_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct BalancerOracle.OracleAccumulatorQuery[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 32425,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 32424,
+                        "name": "OracleAccumulatorQuery",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 32439,
+                        "src": "591:22:85"
+                      },
+                      "referencedDeclaration": 32439,
+                      "src": "591:22:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OracleAccumulatorQuery_$32439_storage_ptr",
+                        "typeString": "struct BalancerOracle.OracleAccumulatorQuery"
+                      }
+                    },
+                    "id": 32426,
+                    "nodeType": "ArrayTypeName",
+                    "src": "591:24:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_OracleAccumulatorQuery_$32439_storage_$dyn_storage_ptr",
+                      "typeString": "struct BalancerOracle.OracleAccumulatorQuery[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "590:41:85"
+            },
+            "returnParameters": {
+              "id": 32432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32431,
+                  "mutability": "mutable",
+                  "name": "results",
+                  "nameLocation": "695:7:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32433,
+                  "src": "679:23:85",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_int256_$dyn_memory_ptr",
+                    "typeString": "int256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 32429,
+                      "name": "int256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "679:6:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "id": 32430,
+                    "nodeType": "ArrayTypeName",
+                    "src": "679:8:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_int256_$dyn_storage_ptr",
+                      "typeString": "int256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "678:25:85"
+            },
+            "scope": 32440,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32439,
+            "nodeType": "StructDefinition",
+            "src": "710:85:85",
+            "nodes": [],
+            "canonicalName": "BalancerOracle.OracleAccumulatorQuery",
+            "members": [
+              {
+                "constant": false,
+                "id": 32436,
+                "mutability": "mutable",
+                "name": "variable",
+                "nameLocation": "759:8:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 32439,
+                "src": "750:17:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Variable_$32392",
+                  "typeString": "enum BalancerOracle.Variable"
+                },
+                "typeName": {
+                  "id": 32435,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 32434,
+                    "name": "Variable",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 32392,
+                    "src": "750:8:85"
+                  },
+                  "referencedDeclaration": 32392,
+                  "src": "750:8:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$32392",
+                    "typeString": "enum BalancerOracle.Variable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 32438,
+                "mutability": "mutable",
+                "name": "ago",
+                "nameLocation": "785:3:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 32439,
+                "src": "777:11:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 32437,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "777:7:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OracleAccumulatorQuery",
+            "nameLocation": "717:22:85",
+            "scope": 32440,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "BalancerOracle",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          32440
+        ],
+        "name": "BalancerOracle",
+        "nameLocation": "77:14:85",
+        "scope": 32441,
+        "usedErrors": []
+      }
+    ],
+    "license": "AGPL-3.0-only"
+  },
+  "id": 85
+}
