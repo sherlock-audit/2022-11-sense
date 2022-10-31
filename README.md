@@ -105,11 +105,12 @@ By using `AutoRoller.withdraw`, the user exits their liquidity position and rece
 git submodule update --init --recursive
 
 # Get sense v1 dependencies
-cd lib/sense-v1
+cd contracts/lib/sense-v1
 yarn # Must have yarn v2 or later
+cd ../..
 
 # Run tests
 forge test
 ```
 
-For a clean example testing setup, check the CI workflow in the [Auto Roller@ b3f33b](https://github.com/sense-finance/auto-roller/blob/b3f33b70aafeed108c1505271bf1301df4ae2d45/.github/workflows/ci.yml) repo.
+For a clean example testing setup, check the CI GitHub workflow in the [Auto Roller@ b3f33b](https://github.com/sense-finance/auto-roller/blob/b3f33b70aafeed108c1505271bf1301df4ae2d45/.github/workflows/ci.yml) repo. Or test from that repo directly for a more streamlined experience.
