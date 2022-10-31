@@ -8,6 +8,6 @@
   "github_team": "sense",
   "logo_url": "https://pbs.twimg.com/profile_images/1415072813170323459/LoaA0ifz_400x400.jpg",
   "private": false,
-  "lead_senior_auditor_handle": "handle",
-  "team_handles": []
+  "lead_senior_auditor_handle": "ak1",
+  "team_handles": ["jparklev", "kentonprescott", "fedealconada"]
 }
