@@ -1,0 +1,544 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract CToken",
+          "name": "cToken",
+          "type": "address"
+        }
+      ],
+      "name": "getUnderlyingPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isPriceOracle",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "underlying",
+          "type": "address"
+        }
+      ],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getUnderlyingPrice(address)": "fc57d4df",
+    "isPriceOracle()": "66331bba",
+    "price(address)": "aea91078"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract CToken\",\"name\":\"cToken\",\"type\":\"address\"}],\"name\":\"getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isPriceOracle\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"underlying\",\"type\":\"address\"}],\"name\":\"price\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Compound\",\"kind\":\"dev\",\"methods\":{\"getUnderlyingPrice(address)\":{\"params\":{\"cToken\":\"The cToken to get the underlying price of\"},\"returns\":{\"_0\":\"The underlying asset price mantissa (scaled by 1e18). 0 means the price is unavailable.\"}},\"price(address)\":{\"params\":{\"underlying\":\"The underlying asset to get the price of.\"},\"returns\":{\"_0\":\"The underlying asset price in ETH as a mantissa (scaled by 1e18). 0 means the price is unavailable.\"}}},\"title\":\"Price Oracle\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getUnderlyingPrice(address)\":{\"notice\":\"Get the underlying price of a cToken asset\"},\"isPriceOracle()\":{\"notice\":\"Indicator that this is a PriceOracle contract (for inspection)\"},\"price(address)\":{\"notice\":\"Get the price of an underlying asset.\"}},\"notice\":\"The minimum interface a contract must implement in order to work as an oracle for Fuse with Sense Original from: https://github.com/Rari-Capital/compound-protocol/blob/fuse-final/contracts/PriceOracle.sol\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/PriceOracle.sol\":\"PriceOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[\":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/\",\":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/\",\":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/\",\":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/\",\":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/\",\":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/\",\":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/\",\":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/\",\":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/\",\":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/\",\":balancer-v2-monorepo/=lib/space-v1/lib/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/\",\":hardhat/=lib/sense-v1/node_modules/hardhat/\",\":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/\",\":sense-v1-core/=lib/sense-v1/pkg/core/src/\",\":sense-v1-utils/=lib/sense-v1/pkg/utils/src/\",\":sense-v1/=lib/sense-v1/pkg/core/src/\",\":solmate/=lib/solmate/src/\",\":space-v1/=lib/space-v1/src/\"]},\"sources\":{\"lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/CToken.sol\":{\"keccak256\":\"0xdebe79827a0a722d6d124611a6ef54926e4f79c6efcf33a3716215e9dad90268\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://c732468ccfa1041f45ec453df96f6d77ad9a67063d1e2a9efadd0367bb982b14\",\"dweb:/ipfs/QmQPQheGBdmw9Q2LUfAq5GnyvXuDqgekUt51catjmUrzbH\"]},\"lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/PriceOracle.sol\":{\"keccak256\":\"0x62fbd5f4315540f45dd0a3dc8611f99db9b954ce4a931955178420524b240ea2\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://8c0d4222b8fe9687f26cb8c94f4b29f244c34b1dc225d99720009627412b3780\",\"dweb:/ipfs/QmYy1Zk4JRBPJ8ygt4YvyzRt33DGrz3zNo9TVDVEDHzyVd\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract CToken",
+              "name": "cToken",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getUnderlyingPrice",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isPriceOracle",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "underlying",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "price",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getUnderlyingPrice(address)": {
+            "params": {
+              "cToken": "The cToken to get the underlying price of"
+            },
+            "returns": {
+              "_0": "The underlying asset price mantissa (scaled by 1e18). 0 means the price is unavailable."
+            }
+          },
+          "price(address)": {
+            "params": {
+              "underlying": "The underlying asset to get the price of."
+            },
+            "returns": {
+              "_0": "The underlying asset price in ETH as a mantissa (scaled by 1e18). 0 means the price is unavailable."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getUnderlyingPrice(address)": {
+            "notice": "Get the underlying price of a cToken asset"
+          },
+          "isPriceOracle()": {
+            "notice": "Indicator that this is a PriceOracle contract (for inspection)"
+          },
+          "price(address)": {
+            "notice": "Get the price of an underlying asset."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/",
+        ":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/",
+        ":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/",
+        ":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/",
+        ":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/",
+        ":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/",
+        ":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/",
+        ":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/",
+        ":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/",
+        ":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/",
+        ":balancer-v2-monorepo/=lib/space-v1/lib/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/",
+        ":hardhat/=lib/sense-v1/node_modules/hardhat/",
+        ":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/",
+        ":sense-v1-core/=lib/sense-v1/pkg/core/src/",
+        ":sense-v1-utils/=lib/sense-v1/pkg/utils/src/",
+        ":sense-v1/=lib/sense-v1/pkg/core/src/",
+        ":solmate/=lib/solmate/src/",
+        ":space-v1/=lib/space-v1/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 10000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/PriceOracle.sol": "PriceOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/CToken.sol": {
+        "keccak256": "0xdebe79827a0a722d6d124611a6ef54926e4f79c6efcf33a3716215e9dad90268",
+        "urls": [
+          "bzz-raw://c732468ccfa1041f45ec453df96f6d77ad9a67063d1e2a9efadd0367bb982b14",
+          "dweb:/ipfs/QmQPQheGBdmw9Q2LUfAq5GnyvXuDqgekUt51catjmUrzbH"
+        ],
+        "license": "AGPL-3.0-only"
+      },
+      "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/PriceOracle.sol": {
+        "keccak256": "0x62fbd5f4315540f45dd0a3dc8611f99db9b954ce4a931955178420524b240ea2",
+        "urls": [
+          "bzz-raw://8c0d4222b8fe9687f26cb8c94f4b29f244c34b1dc225d99720009627412b3780",
+          "dweb:/ipfs/QmYy1Zk4JRBPJ8ygt4YvyzRt33DGrz3zNo9TVDVEDHzyVd"
+        ],
+        "license": "AGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/PriceOracle.sol",
+    "id": 40235,
+    "exportedSymbols": {
+      "CToken": [
+        44427
+      ],
+      "PriceOracle": [
+        40234
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:1142:22",
+    "nodes": [
+      {
+        "id": 40209,
+        "nodeType": "PragmaDirective",
+        "src": "42:23:22",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 40211,
+        "nodeType": "ImportDirective",
+        "src": "67:38:22",
+        "nodes": [],
+        "absolutePath": "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/CToken.sol",
+        "file": "./CToken.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 40235,
+        "sourceUnit": 44428,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 40210,
+              "name": "CToken",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 44427,
+              "src": "76:6:22",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 40234,
+        "nodeType": "ContractDefinition",
+        "src": "373:810:22",
+        "nodes": [
+          {
+            "id": 40216,
+            "nodeType": "VariableDeclaration",
+            "src": "488:41:22",
+            "nodes": [],
+            "constant": true,
+            "documentation": {
+              "id": 40213,
+              "nodeType": "StructuredDocumentation",
+              "src": "409:74:22",
+              "text": "@notice Indicator that this is a PriceOracle contract (for inspection)"
+            },
+            "functionSelector": "66331bba",
+            "mutability": "constant",
+            "name": "isPriceOracle",
+            "nameLocation": "509:13:22",
+            "scope": 40234,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 40214,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "488:4:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "hexValue": "74727565",
+              "id": 40215,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "525:4:22",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 40225,
+            "nodeType": "FunctionDefinition",
+            "src": "771:83:22",
+            "nodes": [],
+            "documentation": {
+              "id": 40217,
+              "nodeType": "StructuredDocumentation",
+              "src": "536:230:22",
+              "text": "@notice Get the underlying price of a cToken asset\n @param cToken The cToken to get the underlying price of\n @return The underlying asset price mantissa (scaled by 1e18).\n 0 means the price is unavailable."
+            },
+            "functionSelector": "fc57d4df",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUnderlyingPrice",
+            "nameLocation": "780:18:22",
+            "parameters": {
+              "id": 40221,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40220,
+                  "mutability": "mutable",
+                  "name": "cToken",
+                  "nameLocation": "806:6:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40225,
+                  "src": "799:13:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_CToken_$44427",
+                    "typeString": "contract CToken"
+                  },
+                  "typeName": {
+                    "id": 40219,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 40218,
+                      "name": "CToken",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 44427,
+                      "src": "799:6:22"
+                    },
+                    "referencedDeclaration": 44427,
+                    "src": "799:6:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_CToken_$44427",
+                      "typeString": "contract CToken"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "798:15:22"
+            },
+            "returnParameters": {
+              "id": 40224,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40223,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40225,
+                  "src": "845:7:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40222,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "844:9:22"
+            },
+            "scope": 40234,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "external"
+          },
+          {
+            "id": 40233,
+            "nodeType": "FunctionDefinition",
+            "src": "1106:75:22",
+            "nodes": [],
+            "documentation": {
+              "id": 40226,
+              "nodeType": "StructuredDocumentation",
+              "src": "860:241:22",
+              "text": "@notice Get the price of an underlying asset.\n @param underlying The underlying asset to get the price of.\n @return The underlying asset price in ETH as a mantissa (scaled by 1e18).\n 0 means the price is unavailable."
+            },
+            "functionSelector": "aea91078",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "price",
+            "nameLocation": "1115:5:22",
+            "parameters": {
+              "id": 40229,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40228,
+                  "mutability": "mutable",
+                  "name": "underlying",
+                  "nameLocation": "1129:10:22",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40233,
+                  "src": "1121:18:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 40227,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1121:7:22",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1120:20:22"
+            },
+            "returnParameters": {
+              "id": 40232,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40231,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40233,
+                  "src": "1172:7:22",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40230,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1172:7:22",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1171:9:22"
+            },
+            "scope": 40234,
+            "stateMutability": "view",
+            "virtual": true,
+            "visibility": "external"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "PriceOracle",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 40212,
+          "nodeType": "StructuredDocumentation",
+          "src": "107:266:22",
+          "text": "@title Price Oracle\n @author Compound\n @notice The minimum interface a contract must implement in order to work as an oracle for Fuse with Sense\n Original from: https://github.com/Rari-Capital/compound-protocol/blob/fuse-final/contracts/PriceOracle.sol"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          40234
+        ],
+        "name": "PriceOracle",
+        "nameLocation": "391:11:22",
+        "scope": 40235,
+        "usedErrors": []
+      }
+    ],
+    "license": "AGPL-3.0-only"
+  },
+  "id": 22
+}

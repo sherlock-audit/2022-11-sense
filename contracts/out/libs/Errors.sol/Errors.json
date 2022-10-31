@@ -1,0 +1,1665 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AdapterNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyInitialized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadySettled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AttemptFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BadContractInteration",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CollectNotSettled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CombineRestricted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DuplicateSeries",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ExistingValue",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FactoryNotSupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FailedAddLpMarket",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FailedAddTargetMarket",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FailedBecomeAdmin",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FailedToAddPTMarket",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FlashBorrowFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FlashCallbackFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FlashUntrustedBorrower",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FlashUntrustedLoanInitiator",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GuardCapReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAdapter",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAdapterType",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMaturity",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidParam",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPrice",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IssuanceFeeCapExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IssuanceRestricted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "IssueOnSettle",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MintFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotAuthorized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotImplemented",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotSettled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyDivider",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyPeriphery",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyPermissionless",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyYT",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OracleNotReady",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OutOfWindowBoundaries",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PTParamsNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolAlreadyDeployed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolNotDeployed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolParamsNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PriceOracleNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RedeemFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RedeemRestricted",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SenderNotEligible",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SeriesDoesNotExist",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SeriesNotQueued",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SwapTooSmall",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetExists",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetNotInFuse",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetNotSupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TargetParamsNotSet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TokenNotSupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TooMuchLeftoverTarget",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TransferFailed",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnexpectedSwapAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Untrusted",
+      "type": "error"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212205551398884b8bd5c3fea450717c655412ed889a93b7d65b7a757c0d9b600bd8164736f6c634300080d0033",
+    "sourceMap": "68:1892:28:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;68:1892:28;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212205551398884b8bd5c3fea450717c655412ed889a93b7d65b7a757c0d9b600bd8164736f6c634300080d0033",
+    "sourceMap": "68:1892:28:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"AdapterNotSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"AlreadyInitialized\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"AlreadySettled\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"AttemptFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"BadContractInteration\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CollectNotSettled\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CombineRestricted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"DuplicateSeries\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ExistingValue\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FactoryNotSupported\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FailedAddLpMarket\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FailedAddTargetMarket\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FailedBecomeAdmin\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FailedToAddPTMarket\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FlashBorrowFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FlashCallbackFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FlashUntrustedBorrower\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"FlashUntrustedLoanInitiator\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"GuardCapReached\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidAdapter\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidAdapterType\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidMaturity\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidParam\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidPrice\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"IssuanceFeeCapExceeded\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"IssuanceRestricted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"IssueOnSettle\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"MintFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NotAuthorized\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NotImplemented\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NotSettled\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyDivider\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyPeriphery\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyPermissionless\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyYT\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OracleNotReady\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OutOfWindowBoundaries\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PTParamsNotSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolAlreadyDeployed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolNotDeployed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolNotSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PoolParamsNotSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PriceOracleNotFound\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"RedeemFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"RedeemRestricted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SenderNotEligible\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SeriesDoesNotExist\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SeriesNotQueued\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SwapTooSmall\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TargetExists\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TargetMismatch\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TargetNotInFuse\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TargetNotSupported\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TargetParamsNotSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TokenNotSupported\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TooMuchLeftoverTarget\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TransferFailed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"UnexpectedSwapAmount\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Untrusted\",\"type\":\"error\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol\":\"Errors\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[\":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/\",\":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/\",\":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/\",\":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/\",\":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/\",\":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/\",\":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/\",\":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/\",\":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/\",\":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/\",\":balancer-v2-monorepo/=lib/space-v1/lib/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/\",\":hardhat/=lib/sense-v1/node_modules/hardhat/\",\":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/\",\":sense-v1-core/=lib/sense-v1/pkg/core/src/\",\":sense-v1-utils/=lib/sense-v1/pkg/utils/src/\",\":sense-v1/=lib/sense-v1/pkg/core/src/\",\":solmate/=lib/solmate/src/\",\":space-v1/=lib/space-v1/src/\"]},\"sources\":{\"lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol\":{\"keccak256\":\"0x5eece5ee6069054e8485c7c799ad1ea764446248088ee16bc0ae08c84f0c52b9\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://32fe7ac2e991c22032d3d3fa3bdf3ee35405160ae916ab9218d585505c2b370a\",\"dweb:/ipfs/QmS37B5FeitZwzQ2cXpvxjhyvmLujtcxXV7HxWWz7RzWwM\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "AdapterNotSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "AlreadyInitialized"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "AlreadySettled"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "AttemptFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "BadContractInteration"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CollectNotSettled"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CombineRestricted"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "DuplicateSeries"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ExistingValue"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FactoryNotSupported"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FailedAddLpMarket"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FailedAddTargetMarket"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FailedBecomeAdmin"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FailedToAddPTMarket"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FlashBorrowFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FlashCallbackFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FlashUntrustedBorrower"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "FlashUntrustedLoanInitiator"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "GuardCapReached"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidAdapter"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidAdapterType"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidMaturity"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidParam"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidPrice"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "IssuanceFeeCapExceeded"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "IssuanceRestricted"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "IssueOnSettle"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "MintFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NotAuthorized"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NotImplemented"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NotSettled"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyDivider"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyPeriphery"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyPermissionless"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyYT"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OracleNotReady"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OutOfWindowBoundaries"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PTParamsNotSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolAlreadyDeployed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolNotDeployed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolNotSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PoolParamsNotSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "PriceOracleNotFound"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "RedeemFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "RedeemRestricted"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SenderNotEligible"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SeriesDoesNotExist"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SeriesNotQueued"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SwapTooSmall"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TargetExists"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TargetMismatch"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TargetNotInFuse"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TargetNotSupported"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TargetParamsNotSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TokenNotSupported"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TooMuchLeftoverTarget"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TransferFailed"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "UnexpectedSwapAmount"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "Untrusted"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/",
+        ":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/",
+        ":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/",
+        ":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/",
+        ":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/",
+        ":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/",
+        ":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/",
+        ":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/",
+        ":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/",
+        ":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/",
+        ":balancer-v2-monorepo/=lib/space-v1/lib/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/",
+        ":hardhat/=lib/sense-v1/node_modules/hardhat/",
+        ":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/",
+        ":sense-v1-core/=lib/sense-v1/pkg/core/src/",
+        ":sense-v1-utils/=lib/sense-v1/pkg/utils/src/",
+        ":sense-v1/=lib/sense-v1/pkg/core/src/",
+        ":solmate/=lib/solmate/src/",
+        ":space-v1/=lib/space-v1/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 10000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol": "Errors"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol": {
+        "keccak256": "0x5eece5ee6069054e8485c7c799ad1ea764446248088ee16bc0ae08c84f0c52b9",
+        "urls": [
+          "bzz-raw://32fe7ac2e991c22032d3d3fa3bdf3ee35405160ae916ab9218d585505c2b370a",
+          "dweb:/ipfs/QmS37B5FeitZwzQ2cXpvxjhyvmLujtcxXV7HxWWz7RzWwM"
+        ],
+        "license": "AGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/sense-v1/node_modules/@sense-finance/v1-utils/src/libs/Errors.sol",
+    "id": 15541,
+    "exportedSymbols": {
+      "Errors": [
+        15540
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:1919:28",
+    "nodes": [
+      {
+        "id": 15421,
+        "nodeType": "PragmaDirective",
+        "src": "42:24:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".4"
+        ]
+      },
+      {
+        "id": 15540,
+        "nodeType": "ContractDefinition",
+        "src": "68:1892:28",
+        "nodes": [
+          {
+            "id": 15423,
+            "nodeType": "ErrorDefinition",
+            "src": "101:26:28",
+            "nodes": [],
+            "errorSelector": "66bed652",
+            "name": "CombineRestricted",
+            "nameLocation": "107:17:28",
+            "parameters": {
+              "id": 15422,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "124:2:28"
+            }
+          },
+          {
+            "id": 15425,
+            "nodeType": "ErrorDefinition",
+            "src": "132:27:28",
+            "nodes": [],
+            "errorSelector": "8159f884",
+            "name": "IssuanceRestricted",
+            "nameLocation": "138:18:28",
+            "parameters": {
+              "id": 15424,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:2:28"
+            }
+          },
+          {
+            "id": 15427,
+            "nodeType": "ErrorDefinition",
+            "src": "164:22:28",
+            "nodes": [],
+            "errorSelector": "ea8e4eb5",
+            "name": "NotAuthorized",
+            "nameLocation": "170:13:28",
+            "parameters": {
+              "id": 15426,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "183:2:28"
+            }
+          },
+          {
+            "id": 15429,
+            "nodeType": "ErrorDefinition",
+            "src": "191:15:28",
+            "nodes": [],
+            "errorSelector": "b114ba98",
+            "name": "OnlyYT",
+            "nameLocation": "197:6:28",
+            "parameters": {
+              "id": 15428,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "203:2:28"
+            }
+          },
+          {
+            "id": 15431,
+            "nodeType": "ErrorDefinition",
+            "src": "211:20:28",
+            "nodes": [],
+            "errorSelector": "8604e361",
+            "name": "OnlyDivider",
+            "nameLocation": "217:11:28",
+            "parameters": {
+              "id": 15430,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "228:2:28"
+            }
+          },
+          {
+            "id": 15433,
+            "nodeType": "ErrorDefinition",
+            "src": "236:22:28",
+            "nodes": [],
+            "errorSelector": "fb021149",
+            "name": "OnlyPeriphery",
+            "nameLocation": "242:13:28",
+            "parameters": {
+              "id": 15432,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "255:2:28"
+            }
+          },
+          {
+            "id": 15435,
+            "nodeType": "ErrorDefinition",
+            "src": "263:27:28",
+            "nodes": [],
+            "errorSelector": "8719352c",
+            "name": "OnlyPermissionless",
+            "nameLocation": "269:18:28",
+            "parameters": {
+              "id": 15434,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "287:2:28"
+            }
+          },
+          {
+            "id": 15437,
+            "nodeType": "ErrorDefinition",
+            "src": "295:25:28",
+            "nodes": [],
+            "errorSelector": "9ad6d35d",
+            "name": "RedeemRestricted",
+            "nameLocation": "301:16:28",
+            "parameters": {
+              "id": 15436,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "317:2:28"
+            }
+          },
+          {
+            "id": 15439,
+            "nodeType": "ErrorDefinition",
+            "src": "325:18:28",
+            "nodes": [],
+            "errorSelector": "77efb076",
+            "name": "Untrusted",
+            "nameLocation": "331:9:28",
+            "parameters": {
+              "id": 15438,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "340:2:28"
+            }
+          },
+          {
+            "id": 15441,
+            "nodeType": "ErrorDefinition",
+            "src": "365:26:28",
+            "nodes": [],
+            "errorSelector": "3dd1b305",
+            "name": "TokenNotSupported",
+            "nameLocation": "371:17:28",
+            "parameters": {
+              "id": 15440,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "388:2:28"
+            }
+          },
+          {
+            "id": 15443,
+            "nodeType": "ErrorDefinition",
+            "src": "396:28:28",
+            "nodes": [],
+            "errorSelector": "207df21c",
+            "name": "FlashCallbackFailed",
+            "nameLocation": "402:19:28",
+            "parameters": {
+              "id": 15442,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "421:2:28"
+            }
+          },
+          {
+            "id": 15445,
+            "nodeType": "ErrorDefinition",
+            "src": "429:26:28",
+            "nodes": [],
+            "errorSelector": "25719d38",
+            "name": "SenderNotEligible",
+            "nameLocation": "435:17:28",
+            "parameters": {
+              "id": 15444,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "452:2:28"
+            }
+          },
+          {
+            "id": 15447,
+            "nodeType": "ErrorDefinition",
+            "src": "460:23:28",
+            "nodes": [],
+            "errorSelector": "73f3f927",
+            "name": "TargetMismatch",
+            "nameLocation": "466:14:28",
+            "parameters": {
+              "id": 15446,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "480:2:28"
+            }
+          },
+          {
+            "id": 15449,
+            "nodeType": "ErrorDefinition",
+            "src": "488:27:28",
+            "nodes": [],
+            "errorSelector": "a2a94ace",
+            "name": "TargetNotSupported",
+            "nameLocation": "494:18:28",
+            "parameters": {
+              "id": 15448,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "512:2:28"
+            }
+          },
+          {
+            "id": 15451,
+            "nodeType": "ErrorDefinition",
+            "src": "520:27:28",
+            "nodes": [],
+            "errorSelector": "e657e884",
+            "name": "InvalidAdapterType",
+            "nameLocation": "526:18:28",
+            "parameters": {
+              "id": 15450,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "544:2:28"
+            }
+          },
+          {
+            "id": 15453,
+            "nodeType": "ErrorDefinition",
+            "src": "552:28:28",
+            "nodes": [],
+            "errorSelector": "7b874a47",
+            "name": "PriceOracleNotFound",
+            "nameLocation": "558:19:28",
+            "parameters": {
+              "id": 15452,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "577:2:28"
+            }
+          },
+          {
+            "id": 15455,
+            "nodeType": "ErrorDefinition",
+            "src": "601:23:28",
+            "nodes": [],
+            "errorSelector": "560ff900",
+            "name": "AlreadySettled",
+            "nameLocation": "607:14:28",
+            "parameters": {
+              "id": 15454,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "621:2:28"
+            }
+          },
+          {
+            "id": 15457,
+            "nodeType": "ErrorDefinition",
+            "src": "629:26:28",
+            "nodes": [],
+            "errorSelector": "1c221a69",
+            "name": "CollectNotSettled",
+            "nameLocation": "635:17:28",
+            "parameters": {
+              "id": 15456,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "652:2:28"
+            }
+          },
+          {
+            "id": 15459,
+            "nodeType": "ErrorDefinition",
+            "src": "660:24:28",
+            "nodes": [],
+            "errorSelector": "64939140",
+            "name": "GuardCapReached",
+            "nameLocation": "666:15:28",
+            "parameters": {
+              "id": 15458,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "681:2:28"
+            }
+          },
+          {
+            "id": 15461,
+            "nodeType": "ErrorDefinition",
+            "src": "689:31:28",
+            "nodes": [],
+            "errorSelector": "2e68f334",
+            "name": "IssuanceFeeCapExceeded",
+            "nameLocation": "695:22:28",
+            "parameters": {
+              "id": 15460,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "717:2:28"
+            }
+          },
+          {
+            "id": 15463,
+            "nodeType": "ErrorDefinition",
+            "src": "725:22:28",
+            "nodes": [],
+            "errorSelector": "0de71155",
+            "name": "IssueOnSettle",
+            "nameLocation": "731:13:28",
+            "parameters": {
+              "id": 15462,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "744:2:28"
+            }
+          },
+          {
+            "id": 15465,
+            "nodeType": "ErrorDefinition",
+            "src": "752:19:28",
+            "nodes": [],
+            "errorSelector": "ba329a9b",
+            "name": "NotSettled",
+            "nameLocation": "758:10:28",
+            "parameters": {
+              "id": 15464,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "768:2:28"
+            }
+          },
+          {
+            "id": 15467,
+            "nodeType": "ErrorDefinition",
+            "src": "804:27:28",
+            "nodes": [],
+            "errorSelector": "0dc149f0",
+            "name": "AlreadyInitialized",
+            "nameLocation": "810:18:28",
+            "parameters": {
+              "id": 15466,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "828:2:28"
+            }
+          },
+          {
+            "id": 15469,
+            "nodeType": "ErrorDefinition",
+            "src": "836:24:28",
+            "nodes": [],
+            "errorSelector": "d309d884",
+            "name": "DuplicateSeries",
+            "nameLocation": "842:15:28",
+            "parameters": {
+              "id": 15468,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "857:2:28"
+            }
+          },
+          {
+            "id": 15471,
+            "nodeType": "ErrorDefinition",
+            "src": "865:22:28",
+            "nodes": [],
+            "errorSelector": "e2be0074",
+            "name": "ExistingValue",
+            "nameLocation": "871:13:28",
+            "parameters": {
+              "id": 15470,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "884:2:28"
+            }
+          },
+          {
+            "id": 15473,
+            "nodeType": "ErrorDefinition",
+            "src": "892:23:28",
+            "nodes": [],
+            "errorSelector": "fbf66df1",
+            "name": "InvalidAdapter",
+            "nameLocation": "898:14:28",
+            "parameters": {
+              "id": 15472,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "912:2:28"
+            }
+          },
+          {
+            "id": 15475,
+            "nodeType": "ErrorDefinition",
+            "src": "920:24:28",
+            "nodes": [],
+            "errorSelector": "c7a682c8",
+            "name": "InvalidMaturity",
+            "nameLocation": "926:15:28",
+            "parameters": {
+              "id": 15474,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "941:2:28"
+            }
+          },
+          {
+            "id": 15477,
+            "nodeType": "ErrorDefinition",
+            "src": "949:21:28",
+            "nodes": [],
+            "errorSelector": "d2529034",
+            "name": "InvalidParam",
+            "nameLocation": "955:12:28",
+            "parameters": {
+              "id": 15476,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "967:2:28"
+            }
+          },
+          {
+            "id": 15479,
+            "nodeType": "ErrorDefinition",
+            "src": "975:23:28",
+            "nodes": [],
+            "errorSelector": "d6234725",
+            "name": "NotImplemented",
+            "nameLocation": "981:14:28",
+            "parameters": {
+              "id": 15478,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "995:2:28"
+            }
+          },
+          {
+            "id": 15481,
+            "nodeType": "ErrorDefinition",
+            "src": "1003:30:28",
+            "nodes": [],
+            "errorSelector": "852de682",
+            "name": "OutOfWindowBoundaries",
+            "nameLocation": "1009:21:28",
+            "parameters": {
+              "id": 15480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1030:2:28"
+            }
+          },
+          {
+            "id": 15483,
+            "nodeType": "ErrorDefinition",
+            "src": "1038:27:28",
+            "nodes": [],
+            "errorSelector": "17601743",
+            "name": "SeriesDoesNotExist",
+            "nameLocation": "1044:18:28",
+            "parameters": {
+              "id": 15482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1062:2:28"
+            }
+          },
+          {
+            "id": 15485,
+            "nodeType": "ErrorDefinition",
+            "src": "1070:21:28",
+            "nodes": [],
+            "errorSelector": "81406f46",
+            "name": "SwapTooSmall",
+            "nameLocation": "1076:12:28",
+            "parameters": {
+              "id": 15484,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1088:2:28"
+            }
+          },
+          {
+            "id": 15487,
+            "nodeType": "ErrorDefinition",
+            "src": "1096:27:28",
+            "nodes": [],
+            "errorSelector": "6bf00ef4",
+            "name": "TargetParamsNotSet",
+            "nameLocation": "1102:18:28",
+            "parameters": {
+              "id": 15486,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1120:2:28"
+            }
+          },
+          {
+            "id": 15489,
+            "nodeType": "ErrorDefinition",
+            "src": "1128:25:28",
+            "nodes": [],
+            "errorSelector": "98d12d3e",
+            "name": "PoolParamsNotSet",
+            "nameLocation": "1134:16:28",
+            "parameters": {
+              "id": 15488,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1150:2:28"
+            }
+          },
+          {
+            "id": 15491,
+            "nodeType": "ErrorDefinition",
+            "src": "1158:23:28",
+            "nodes": [],
+            "errorSelector": "24df3c23",
+            "name": "PTParamsNotSet",
+            "nameLocation": "1164:14:28",
+            "parameters": {
+              "id": 15490,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1178:2:28"
+            }
+          },
+          {
+            "id": 15493,
+            "nodeType": "ErrorDefinition",
+            "src": "1186:22:28",
+            "nodes": [],
+            "errorSelector": "48ae2323",
+            "name": "AttemptFailed",
+            "nameLocation": "1192:13:28",
+            "parameters": {
+              "id": 15492,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1205:2:28"
+            }
+          },
+          {
+            "id": 15495,
+            "nodeType": "ErrorDefinition",
+            "src": "1213:21:28",
+            "nodes": [],
+            "errorSelector": "00bfc921",
+            "name": "InvalidPrice",
+            "nameLocation": "1219:12:28",
+            "parameters": {
+              "id": 15494,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1231:2:28"
+            }
+          },
+          {
+            "id": 15497,
+            "nodeType": "ErrorDefinition",
+            "src": "1239:30:28",
+            "nodes": [],
+            "errorSelector": "41ac6b7d",
+            "name": "BadContractInteration",
+            "nameLocation": "1245:21:28",
+            "parameters": {
+              "id": 15496,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1266:2:28"
+            }
+          },
+          {
+            "id": 15499,
+            "nodeType": "ErrorDefinition",
+            "src": "1292:28:28",
+            "nodes": [],
+            "errorSelector": "e459d6aa",
+            "name": "FactoryNotSupported",
+            "nameLocation": "1298:19:28",
+            "parameters": {
+              "id": 15498,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1317:2:28"
+            }
+          },
+          {
+            "id": 15501,
+            "nodeType": "ErrorDefinition",
+            "src": "1325:26:28",
+            "nodes": [],
+            "errorSelector": "87cce7b8",
+            "name": "FlashBorrowFailed",
+            "nameLocation": "1331:17:28",
+            "parameters": {
+              "id": 15500,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1348:2:28"
+            }
+          },
+          {
+            "id": 15503,
+            "nodeType": "ErrorDefinition",
+            "src": "1356:31:28",
+            "nodes": [],
+            "errorSelector": "4cd0f00a",
+            "name": "FlashUntrustedBorrower",
+            "nameLocation": "1362:22:28",
+            "parameters": {
+              "id": 15502,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1384:2:28"
+            }
+          },
+          {
+            "id": 15505,
+            "nodeType": "ErrorDefinition",
+            "src": "1392:36:28",
+            "nodes": [],
+            "errorSelector": "14aa2888",
+            "name": "FlashUntrustedLoanInitiator",
+            "nameLocation": "1398:27:28",
+            "parameters": {
+              "id": 15504,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1425:2:28"
+            }
+          },
+          {
+            "id": 15507,
+            "nodeType": "ErrorDefinition",
+            "src": "1433:29:28",
+            "nodes": [],
+            "errorSelector": "51eb56bb",
+            "name": "UnexpectedSwapAmount",
+            "nameLocation": "1439:20:28",
+            "parameters": {
+              "id": 15506,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1459:2:28"
+            }
+          },
+          {
+            "id": 15509,
+            "nodeType": "ErrorDefinition",
+            "src": "1467:30:28",
+            "nodes": [],
+            "errorSelector": "87af0bca",
+            "name": "TooMuchLeftoverTarget",
+            "nameLocation": "1473:21:28",
+            "parameters": {
+              "id": 15508,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1494:2:28"
+            }
+          },
+          {
+            "id": 15511,
+            "nodeType": "ErrorDefinition",
+            "src": "1515:22:28",
+            "nodes": [],
+            "errorSelector": "a091855e",
+            "name": "AdapterNotSet",
+            "nameLocation": "1521:13:28",
+            "parameters": {
+              "id": 15510,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1534:2:28"
+            }
+          },
+          {
+            "id": 15513,
+            "nodeType": "ErrorDefinition",
+            "src": "1542:26:28",
+            "nodes": [],
+            "errorSelector": "9782db4a",
+            "name": "FailedBecomeAdmin",
+            "nameLocation": "1548:17:28",
+            "parameters": {
+              "id": 15512,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1565:2:28"
+            }
+          },
+          {
+            "id": 15515,
+            "nodeType": "ErrorDefinition",
+            "src": "1573:30:28",
+            "nodes": [],
+            "errorSelector": "53c72d3d",
+            "name": "FailedAddTargetMarket",
+            "nameLocation": "1579:21:28",
+            "parameters": {
+              "id": 15514,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1600:2:28"
+            }
+          },
+          {
+            "id": 15517,
+            "nodeType": "ErrorDefinition",
+            "src": "1608:28:28",
+            "nodes": [],
+            "errorSelector": "4158dfcd",
+            "name": "FailedToAddPTMarket",
+            "nameLocation": "1614:19:28",
+            "parameters": {
+              "id": 15516,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1633:2:28"
+            }
+          },
+          {
+            "id": 15519,
+            "nodeType": "ErrorDefinition",
+            "src": "1641:26:28",
+            "nodes": [],
+            "errorSelector": "185bfbc0",
+            "name": "FailedAddLpMarket",
+            "nameLocation": "1647:17:28",
+            "parameters": {
+              "id": 15518,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1664:2:28"
+            }
+          },
+          {
+            "id": 15521,
+            "nodeType": "ErrorDefinition",
+            "src": "1672:23:28",
+            "nodes": [],
+            "errorSelector": "6e155fc6",
+            "name": "OracleNotReady",
+            "nameLocation": "1678:14:28",
+            "parameters": {
+              "id": 15520,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1692:2:28"
+            }
+          },
+          {
+            "id": 15523,
+            "nodeType": "ErrorDefinition",
+            "src": "1700:28:28",
+            "nodes": [],
+            "errorSelector": "60d02320",
+            "name": "PoolAlreadyDeployed",
+            "nameLocation": "1706:19:28",
+            "parameters": {
+              "id": 15522,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1725:2:28"
+            }
+          },
+          {
+            "id": 15525,
+            "nodeType": "ErrorDefinition",
+            "src": "1733:24:28",
+            "nodes": [],
+            "errorSelector": "39458691",
+            "name": "PoolNotDeployed",
+            "nameLocation": "1739:15:28",
+            "parameters": {
+              "id": 15524,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1754:2:28"
+            }
+          },
+          {
+            "id": 15527,
+            "nodeType": "ErrorDefinition",
+            "src": "1762:19:28",
+            "nodes": [],
+            "errorSelector": "3c675863",
+            "name": "PoolNotSet",
+            "nameLocation": "1768:10:28",
+            "parameters": {
+              "id": 15526,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1778:2:28"
+            }
+          },
+          {
+            "id": 15529,
+            "nodeType": "ErrorDefinition",
+            "src": "1786:24:28",
+            "nodes": [],
+            "errorSelector": "662e50ac",
+            "name": "SeriesNotQueued",
+            "nameLocation": "1792:15:28",
+            "parameters": {
+              "id": 15528,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1807:2:28"
+            }
+          },
+          {
+            "id": 15531,
+            "nodeType": "ErrorDefinition",
+            "src": "1815:21:28",
+            "nodes": [],
+            "errorSelector": "5c6d7f7b",
+            "name": "TargetExists",
+            "nameLocation": "1821:12:28",
+            "parameters": {
+              "id": 15530,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1833:2:28"
+            }
+          },
+          {
+            "id": 15533,
+            "nodeType": "ErrorDefinition",
+            "src": "1841:24:28",
+            "nodes": [],
+            "errorSelector": "2f6924d1",
+            "name": "TargetNotInFuse",
+            "nameLocation": "1847:15:28",
+            "parameters": {
+              "id": 15532,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1862:2:28"
+            }
+          },
+          {
+            "id": 15535,
+            "nodeType": "ErrorDefinition",
+            "src": "1885:19:28",
+            "nodes": [],
+            "errorSelector": "07637bd8",
+            "name": "MintFailed",
+            "nameLocation": "1891:10:28",
+            "parameters": {
+              "id": 15534,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1901:2:28"
+            }
+          },
+          {
+            "id": 15537,
+            "nodeType": "ErrorDefinition",
+            "src": "1909:21:28",
+            "nodes": [],
+            "errorSelector": "bb1205c2",
+            "name": "RedeemFailed",
+            "nameLocation": "1915:12:28",
+            "parameters": {
+              "id": 15536,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1927:2:28"
+            }
+          },
+          {
+            "id": 15539,
+            "nodeType": "ErrorDefinition",
+            "src": "1935:23:28",
+            "nodes": [],
+            "errorSelector": "90b8ec18",
+            "name": "TransferFailed",
+            "nameLocation": "1941:14:28",
+            "parameters": {
+              "id": 15538,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1955:2:28"
+            }
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Errors",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          15540
+        ],
+        "name": "Errors",
+        "nameLocation": "76:6:28",
+        "scope": 15541,
+        "usedErrors": [
+          15423,
+          15425,
+          15427,
+          15429,
+          15431,
+          15433,
+          15435,
+          15437,
+          15439,
+          15441,
+          15443,
+          15445,
+          15447,
+          15449,
+          15451,
+          15453,
+          15455,
+          15457,
+          15459,
+          15461,
+          15463,
+          15465,
+          15467,
+          15469,
+          15471,
+          15473,
+          15475,
+          15477,
+          15479,
+          15481,
+          15483,
+          15485,
+          15487,
+          15489,
+          15491,
+          15493,
+          15495,
+          15497,
+          15499,
+          15501,
+          15503,
+          15505,
+          15507,
+          15509,
+          15511,
+          15513,
+          15515,
+          15517,
+          15519,
+          15521,
+          15523,
+          15525,
+          15527,
+          15529,
+          15531,
+          15533,
+          15535,
+          15537,
+          15539
+        ]
+      }
+    ],
+    "license": "AGPL-3.0-only"
+  },
+  "id": 28
+}

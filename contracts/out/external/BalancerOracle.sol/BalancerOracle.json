@@ -1,0 +1,1243 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getIndices",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "_pti",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_targeti",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getPoolId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSample",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "logPairPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "accLogPairPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "logBptPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "accLogBptPrice",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "logInvariant",
+          "type": "int256"
+        },
+        {
+          "internalType": "int256",
+          "name": "accLogInvariant",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum BalancerOracle.Variable",
+              "name": "variable",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "secs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ago",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct BalancerOracle.OracleAverageQuery[]",
+          "name": "queries",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "getTimeWeightedAverage",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "results",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalSamples",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVault",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getIndices()": "5863056d",
+    "getPoolId()": "38fff2d0",
+    "getSample(uint256)": "60d1507c",
+    "getTimeWeightedAverage((uint8,uint256,uint256)[])": "1dccd830",
+    "getTotalSamples()": "b48b5b40",
+    "getVault()": "8d928af8",
+    "totalSupply()": "18160ddd"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getIndices\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_pti\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_targeti\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPoolId\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getSample\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"logPairPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"accLogPairPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"logBptPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"accLogBptPrice\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"logInvariant\",\"type\":\"int256\"},{\"internalType\":\"int256\",\"name\":\"accLogInvariant\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enum BalancerOracle.Variable\",\"name\":\"variable\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"secs\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"ago\",\"type\":\"uint256\"}],\"internalType\":\"struct BalancerOracle.OracleAverageQuery[]\",\"name\":\"queries\",\"type\":\"tuple[]\"}],\"name\":\"getTimeWeightedAverage\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"results\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTotalSamples\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getVault\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/BalancerOracle.sol\":\"BalancerOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":10000},\"remappings\":[\":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/\",\":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/\",\":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/\",\":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/\",\":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/\",\":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/\",\":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/\",\":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/\",\":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/\",\":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/\",\":balancer-v2-monorepo/=lib/space-v1/lib/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/\",\":hardhat/=lib/sense-v1/node_modules/hardhat/\",\":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/\",\":sense-v1-core/=lib/sense-v1/pkg/core/src/\",\":sense-v1-utils/=lib/sense-v1/pkg/utils/src/\",\":sense-v1/=lib/sense-v1/pkg/core/src/\",\":solmate/=lib/solmate/src/\",\":space-v1/=lib/space-v1/src/\"]},\"sources\":{\"lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/BalancerOracle.sol\":{\"keccak256\":\"0x4ebb56045613a49f52c4836b015c0e9ed1cca305ebbe75bcd685078eb21a77c5\",\"license\":\"AGPL-3.0-only\",\"urls\":[\"bzz-raw://78704b5679c449b5ca6da33f84df5f5f8cd411746cb4bb2674328478608b860b\",\"dweb:/ipfs/QmeW7WwDYkqLmW7Tidcgpt2QPzbLHRF1mtyJLYT1PBtXQd\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.13+commit.abaa5c0e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getIndices",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "_pti",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_targeti",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getPoolId",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "index",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSample",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "logPairPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "accLogPairPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "logBptPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "accLogBptPrice",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "logInvariant",
+              "type": "int256"
+            },
+            {
+              "internalType": "int256",
+              "name": "accLogInvariant",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct BalancerOracle.OracleAverageQuery[]",
+              "name": "queries",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "enum BalancerOracle.Variable",
+                  "name": "variable",
+                  "type": "uint8"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "secs",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "ago",
+                  "type": "uint256"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTimeWeightedAverage",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "results",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getTotalSamples",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getVault",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@balancer-labs/=lib/sense-v1/node_modules/@balancer-labs/",
+        ":@balancer-labs/v2-pool-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/pool-utils/",
+        ":@balancer-labs/v2-solidity-utils/=lib/space-v1/lib/balancer-v2-monorepo/pkg/solidity-utils/",
+        ":@balancer-labs/v2-vault/=lib/space-v1/lib/balancer-v2-monorepo/pkg/vault/",
+        ":@openzeppelin/=lib/sense-v1/node_modules/@openzeppelin/",
+        ":@openzeppelin/contracts/=lib/sense-v1/node_modules/@openzeppelin/contracts/",
+        ":@rari-capital/=lib/sense-v1/node_modules/@rari-capital/",
+        ":@sense-finance/=lib/sense-v1/node_modules/@sense-finance/",
+        ":@sense-finance/v1-core/=lib/space-v1/lib/sense-v1/pkg/core/",
+        ":@sense-finance/v1-utils/=lib/space-v1/lib/sense-v1/pkg/utils/",
+        ":balancer-v2-monorepo/=lib/space-v1/lib/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":hardhat-deploy/=lib/sense-v1/node_modules/hardhat-deploy/",
+        ":hardhat/=lib/sense-v1/node_modules/hardhat/",
+        ":prettier-plugin-solidity/=lib/sense-v1/node_modules/prettier-plugin-solidity/",
+        ":sense-v1-core/=lib/sense-v1/pkg/core/src/",
+        ":sense-v1-utils/=lib/sense-v1/pkg/utils/src/",
+        ":sense-v1/=lib/sense-v1/pkg/core/src/",
+        ":solmate/=lib/solmate/src/",
+        ":space-v1/=lib/space-v1/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 10000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/BalancerOracle.sol": "BalancerOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/BalancerOracle.sol": {
+        "keccak256": "0x4ebb56045613a49f52c4836b015c0e9ed1cca305ebbe75bcd685078eb21a77c5",
+        "urls": [
+          "bzz-raw://78704b5679c449b5ca6da33f84df5f5f8cd411746cb4bb2674328478608b860b",
+          "dweb:/ipfs/QmeW7WwDYkqLmW7Tidcgpt2QPzbLHRF1mtyJLYT1PBtXQd"
+        ],
+        "license": "AGPL-3.0-only"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/sense-v1/node_modules/@sense-finance/v1-fuse/src/external/BalancerOracle.sol",
+    "id": 40208,
+    "exportedSymbols": {
+      "BalancerOracle": [
+        40207
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "42:1052:20",
+    "nodes": [
+      {
+        "id": 40138,
+        "nodeType": "PragmaDirective",
+        "src": "42:23:20",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 40207,
+        "nodeType": "ContractDefinition",
+        "src": "67:1026:20",
+        "nodes": [
+          {
+            "id": 40148,
+            "nodeType": "FunctionDefinition",
+            "src": "98:142:20",
+            "nodes": [],
+            "functionSelector": "1dccd830",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTimeWeightedAverage",
+            "nameLocation": "107:22:20",
+            "parameters": {
+              "id": 40143,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40142,
+                  "mutability": "mutable",
+                  "name": "queries",
+                  "nameLocation": "158:7:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40148,
+                  "src": "130:35:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_OracleAverageQuery_$40160_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct BalancerOracle.OracleAverageQuery[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 40140,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 40139,
+                        "name": "OracleAverageQuery",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 40160,
+                        "src": "130:18:20"
+                      },
+                      "referencedDeclaration": 40160,
+                      "src": "130:18:20",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_OracleAverageQuery_$40160_storage_ptr",
+                        "typeString": "struct BalancerOracle.OracleAverageQuery"
+                      }
+                    },
+                    "id": 40141,
+                    "nodeType": "ArrayTypeName",
+                    "src": "130:20:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_OracleAverageQuery_$40160_storage_$dyn_storage_ptr",
+                      "typeString": "struct BalancerOracle.OracleAverageQuery[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "129:37:20"
+            },
+            "returnParameters": {
+              "id": 40147,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40146,
+                  "mutability": "mutable",
+                  "name": "results",
+                  "nameLocation": "231:7:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40148,
+                  "src": "214:24:20",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 40144,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "214:7:20",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 40145,
+                    "nodeType": "ArrayTypeName",
+                    "src": "214:9:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "213:26:20"
+            },
+            "scope": 40207,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40152,
+            "nodeType": "EnumDefinition",
+            "src": "246:78:20",
+            "nodes": [],
+            "canonicalName": "BalancerOracle.Variable",
+            "members": [
+              {
+                "id": 40149,
+                "name": "PAIR_PRICE",
+                "nameLocation": "270:10:20",
+                "nodeType": "EnumValue",
+                "src": "270:10:20"
+              },
+              {
+                "id": 40150,
+                "name": "BPT_PRICE",
+                "nameLocation": "290:9:20",
+                "nodeType": "EnumValue",
+                "src": "290:9:20"
+              },
+              {
+                "id": 40151,
+                "name": "INVARIANT",
+                "nameLocation": "309:9:20",
+                "nodeType": "EnumValue",
+                "src": "309:9:20"
+              }
+            ],
+            "name": "Variable",
+            "nameLocation": "251:8:20"
+          },
+          {
+            "id": 40160,
+            "nodeType": "StructDefinition",
+            "src": "329:103:20",
+            "nodes": [],
+            "canonicalName": "BalancerOracle.OracleAverageQuery",
+            "members": [
+              {
+                "constant": false,
+                "id": 40155,
+                "mutability": "mutable",
+                "name": "variable",
+                "nameLocation": "374:8:20",
+                "nodeType": "VariableDeclaration",
+                "scope": 40160,
+                "src": "365:17:20",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Variable_$40152",
+                  "typeString": "enum BalancerOracle.Variable"
+                },
+                "typeName": {
+                  "id": 40154,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 40153,
+                    "name": "Variable",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 40152,
+                    "src": "365:8:20"
+                  },
+                  "referencedDeclaration": 40152,
+                  "src": "365:8:20",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Variable_$40152",
+                    "typeString": "enum BalancerOracle.Variable"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 40157,
+                "mutability": "mutable",
+                "name": "secs",
+                "nameLocation": "400:4:20",
+                "nodeType": "VariableDeclaration",
+                "scope": 40160,
+                "src": "392:12:20",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 40156,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "392:7:20",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 40159,
+                "mutability": "mutable",
+                "name": "ago",
+                "nameLocation": "422:3:20",
+                "nodeType": "VariableDeclaration",
+                "scope": 40160,
+                "src": "414:11:20",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 40158,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "414:7:20",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "OracleAverageQuery",
+            "nameLocation": "336:18:20",
+            "scope": 40207,
+            "visibility": "public"
+          },
+          {
+            "id": 40179,
+            "nodeType": "FunctionDefinition",
+            "src": "438:327:20",
+            "nodes": [],
+            "functionSelector": "60d1507c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSample",
+            "nameLocation": "447:9:20",
+            "parameters": {
+              "id": 40163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40162,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "465:5:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "457:13:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40161,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "456:15:20"
+            },
+            "returnParameters": {
+              "id": 40178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40165,
+                  "mutability": "mutable",
+                  "name": "logPairPrice",
+                  "nameLocation": "539:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "532:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40164,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "532:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40167,
+                  "mutability": "mutable",
+                  "name": "accLogPairPrice",
+                  "nameLocation": "572:15:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "565:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40166,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "565:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40169,
+                  "mutability": "mutable",
+                  "name": "logBptPrice",
+                  "nameLocation": "608:11:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "601:18:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40168,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "601:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40171,
+                  "mutability": "mutable",
+                  "name": "accLogBptPrice",
+                  "nameLocation": "640:14:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "633:21:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40170,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "633:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40173,
+                  "mutability": "mutable",
+                  "name": "logInvariant",
+                  "nameLocation": "675:12:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "668:19:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40172,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "668:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40175,
+                  "mutability": "mutable",
+                  "name": "accLogInvariant",
+                  "nameLocation": "708:15:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "701:22:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40174,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:6:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40177,
+                  "mutability": "mutable",
+                  "name": "timestamp",
+                  "nameLocation": "745:9:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40179,
+                  "src": "737:17:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40176,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "737:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "518:246:20"
+            },
+            "scope": 40207,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40184,
+            "nodeType": "FunctionDefinition",
+            "src": "771:53:20",
+            "nodes": [],
+            "functionSelector": "38fff2d0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPoolId",
+            "nameLocation": "780:9:20",
+            "parameters": {
+              "id": 40180,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "789:2:20"
+            },
+            "returnParameters": {
+              "id": 40183,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40182,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40184,
+                  "src": "815:7:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 40181,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "815:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "814:9:20"
+            },
+            "scope": 40207,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40189,
+            "nodeType": "FunctionDefinition",
+            "src": "830:52:20",
+            "nodes": [],
+            "functionSelector": "8d928af8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getVault",
+            "nameLocation": "839:8:20",
+            "parameters": {
+              "id": 40185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "847:2:20"
+            },
+            "returnParameters": {
+              "id": 40188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40187,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40189,
+                  "src": "873:7:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 40186,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "873:7:20",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "872:9:20"
+            },
+            "scope": 40207,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40196,
+            "nodeType": "FunctionDefinition",
+            "src": "888:77:20",
+            "nodes": [],
+            "functionSelector": "5863056d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getIndices",
+            "nameLocation": "897:10:20",
+            "parameters": {
+              "id": 40190,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "907:2:20"
+            },
+            "returnParameters": {
+              "id": 40195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40192,
+                  "mutability": "mutable",
+                  "name": "_pti",
+                  "nameLocation": "941:4:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40196,
+                  "src": "933:12:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40191,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "933:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 40194,
+                  "mutability": "mutable",
+                  "name": "_targeti",
+                  "nameLocation": "955:8:20",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40196,
+                  "src": "947:16:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40193,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "947:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "932:32:20"
+            },
+            "scope": 40207,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40201,
+            "nodeType": "FunctionDefinition",
+            "src": "971:55:20",
+            "nodes": [],
+            "functionSelector": "18160ddd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "totalSupply",
+            "nameLocation": "980:11:20",
+            "parameters": {
+              "id": 40197,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "991:2:20"
+            },
+            "returnParameters": {
+              "id": 40200,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40199,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40201,
+                  "src": "1017:7:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40198,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1017:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1016:9:20"
+            },
+            "scope": 40207,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 40206,
+            "nodeType": "FunctionDefinition",
+            "src": "1032:59:20",
+            "nodes": [],
+            "functionSelector": "b48b5b40",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTotalSamples",
+            "nameLocation": "1041:15:20",
+            "parameters": {
+              "id": 40202,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1056:2:20"
+            },
+            "returnParameters": {
+              "id": 40205,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 40204,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 40206,
+                  "src": "1082:7:20",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 40203,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1082:7:20",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1081:9:20"
+            },
+            "scope": 40207,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "BalancerOracle",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          40207
+        ],
+        "name": "BalancerOracle",
+        "nameLocation": "77:14:20",
+        "scope": 40208,
+        "usedErrors": []
+      }
+    ],
+    "license": "AGPL-3.0-only"
+  },
+  "id": 20
+}
