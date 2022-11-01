@@ -25,7 +25,6 @@ ERC4626: [any]
 The following contracts in the [Sense Auto Roller @ b3f33b](https://github.com/sense-finance/auto-roller/tree/b3f33b70aafeed108c1505271bf1301df4ae2d45) repo are in scope.
 
 - `AutoRoller.sol`
-- `RollerUtils.sol`
 - `AutoRollerFactory.sol`
 - `RollerPeriphery.sol`
 
