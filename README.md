@@ -22,7 +22,7 @@ ERC4626: [any]
 
 # Audit scope
 
-The following contracts in the [Sense Auto Roller @ b3f33b](https://github.com/sense-finance/auto-roller/tree/b3f33b70aafeed108c1505271bf1301df4ae2d45) repo are in scope.
+The following files in the [Sense Auto Roller @ b3f33b](https://github.com/sense-finance/auto-roller/tree/b3f33b70aafeed108c1505271bf1301df4ae2d45) repo are in scope.
 
 - `AutoRoller.sol`
 - `AutoRollerFactory.sol`
